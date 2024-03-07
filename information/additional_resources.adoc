@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: information/additional_resources.html 
+keywords: addition resources, additional information, astra family, cloud, netapp cloud, netapp support 
+summary: ここでは、 NetApp クラウドサービスとサポート、および REST とクラウドの一般的な概念について、ヘルプや詳細情報を参照するためのリソースを提供しています。 
+---
+= その他のリソース
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ここでは、 NetApp クラウドサービスとサポート、および REST とクラウドの一般的な概念について、ヘルプや詳細情報を参照するためのリソースを提供しています。
+
+
+
+== アストラ
+
+* https://docs.netapp.com/us-en/astra-control-center-2310/["Astra Control Center 23.10ドキュメント"^]
++
+お客様の施設に導入されている Astra Control Center ソフトウェアの最新リリースのドキュメント。
+
+* https://docs.netapp.com/us-en/astra-control-service/["Astra Control Service のマニュアル"^]
++
+パブリッククラウドで利用可能な最新リリースの Astra Control Service ソフトウェアのドキュメント。
+
+* https://docs.netapp.com/us-en/trident/["Astra Trident のドキュメント"^]
++
+ネットアップが保守しているオープンソースのストレージオーケストレーションツールである Astra Trident ソフトウェアの最新リリースのドキュメント。
+
+* https://docs.netapp.com/us-en/astra-family/["Astra ファミリーのドキュメント"^]
++
+オンプレミス環境とパブリッククラウド環境の両方で、すべての Astra ドキュメントに一元的にアクセスできます。
+
+* https://discord.gg/NetApp["切断"^]
++
+Astra Controlとその他のネットアップ製品のコミュニティサポート。
+
+
+
+
+
+== ネットアップのクラウドリソース
+
+* https://bluexp.netapp.com/["NetApp BlueXP"^]
++
+ネットアップのクラウドソリューションの中心的なサイト。
+
+* https://services.cloud.netapp.com/redirect-to-login?startOnSignup=false["NetApp Cloud Central コンソール"^]
++
+NetApp Cloud Central サービスコンソールにサインインします。
+
+* https://mysupport.netapp.com/["ネットアップサポート"^]
++
+トラブルシューティングツール、ドキュメント、およびテクニカルサポートにアクセスできます。
+
+
+
+
+
+== REST とクラウドの概念
+
+* 博士 https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm["失策"^] 著者 : Roy Fielding オリジナル版を読む
++
+本ドキュメントでは、 REST アプリケーション開発モデルを導入および確立しました。
+
+* https://auth0.com/["Auth0"^]
++
+これは、 Astra サービスが Web アクセスに使用する認証および認可プラットフォームサービスです。
+
+* https://www.rfc-editor.org/["RFC エディタ"^]
++
+独自に番号付けされた RFC 文書の集合として維持されている Web およびインターネット標準の信頼できるソース。
+
+

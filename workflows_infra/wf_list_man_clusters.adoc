@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: workflows_infra/wf_list_man_clusters.html 
+keywords:  
+summary: Astra が現在管理している Kubernetes クラスタをリストできます。 
+---
+= 管理対象クラスタをリストします
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Astra が現在管理している Kubernetes クラスタをリストできます。
+
+
+
+=== 1.管理対象クラスタの一覧を表示します
+
+次の REST API 呼び出しを実行します。
+
+[cols="1,6"]
+|===
+| HTTP メソッド | パス 
+
+
+| 取得 | /accounts /｛account_id｝/topology/v1 / managedClusters 
+|===
+
+
+===== curl の例：すべてのクラスタのすべてのデータを返します
+
+[source, curl]
+----
+curl --location -i --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/topology/v1/managedClusters' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'
+----

@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: get-started/get_api_token.html 
+keywords: token, obtain token 
+summary: Astra Control REST API を使用するには、 Astra API トークンを取得する必要があります。 
+---
+= API トークンを取得します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Astra Control REST API を使用するには、 Astra API トークンを取得する必要があります。
+
+
+
+== 概要
+
+API トークンは、 Astra の呼び出し元を識別し、すべての REST API 呼び出しに含める必要があります。
+
+* Astra Webユーザインターフェイスを使用してAPIトークンを生成する必要があります。
+* トークンを生成するための手順は、どちらのAstra導入モデルでも同じです。Astraへのアクセスに使用されるURLのみが異なります。
+* トークンと関連付けられているアクセス許可とともに伝送されるユーザーIDは、トークンを作成したユーザーによって決定されます。
+* トークンがに含まれている必要があります `Authorization` HTTP要求ヘッダー。
+* トークンは作成後に期限切れになることはありません。
+* トークンは、 Astra の Web ユーザインターフェイスから取り消すことができます。
+
+
+.関連情報
+* link:../additional/revoke_token.html["API トークンを取り消します"]
+
+
+
+
+== Astra API トークンを作成
+
+Astra API トークンを作成する手順を次に示します。
+
+.作業を開始する前に
+Astra アカウントのクレデンシャルが必要です。
+
+.このタスクについて
+このタスクは、 Astra Web インターフェイスで API トークンを生成します。また、 API 呼び出しの際にも必要なアカウント ID を取得する必要があります。
+
+.手順
+. 次のアカウントクレデンシャルを使用してAstraにサインインします。
++
+** Astra Controlサービス： link:https://astra.netapp.io["https://astra.netapp.io"^]
+** Astra Control Center：インストール時に設定したローカル環境のURLを使用
+
+
+. ページの右上にある図のアイコンをクリックし、 * API access * を選択します。
+. ページで*[APIトークンの生成]*をクリックし、ポップアップウィンドウで*[APIトークンの生成]*をクリックします。
+. アイコンをクリックしてトークン文字列をクリップボードにコピーし、エディタに保存します。
+. 同じページにあるアカウント ID をコピーして保存します。
+
+
+.完了後
+curlまたはプログラミング言語を使用してAstra Control REST APIにアクセスする場合は、API BearerトークンをHTTPに含める必要があります。 `Authorization` 要求ヘッダー。

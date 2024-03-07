@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: python/python_before.html 
+keywords: python3, requests, urllib3, identity, json 
+summary: Pythonは、データセンター自動化のための一般的な開発言語です。Python のネイティブ機能をいくつかの共通パッケージとともに使用する前に、環境と必要な入力ファイルを準備する必要があります。 
+---
+= 作業を開始する前に
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pythonは、データセンター自動化のための一般的な開発言語です。Python のネイティブ機能をいくつかの共通パッケージとともに使用する前に、環境と必要な入力ファイルを準備する必要があります。
+
+
+NOTE: ネットアップは、 Python を使用して Astra Control REST API に直接アクセスするだけでなく、 API を抽象化して複雑さを排除するツールキットパッケージも提供しています。を参照してください link:../python/astra_toolkits.html["NetApp Astra Control Python SDK"] を参照してください。
+
+
+
+== 環境を準備
+
+以下に、 Python スクリプトを実行するための基本的な設定要件を示します。
+
+.Python 3.
+最新バージョンの Python 3 がインストールされている必要があります。
+
+.追加ライブラリ
+*Requests * および *ullib3 * ライブラリがインストールされている必要があります。環境に応じて、 pip などの Python 管理ツールを使用できます。
+
+.ネットワークアクセス
+スクリプトを実行するワークステーションは、ネットワークにアクセスし、 Astra Control にアクセスできる必要があります。Astra Control Serviceを使用する場合は、インターネットに接続し、でサービスに接続できる必要があります `https://astra.netapp.io`。
+
+.ID 情報
+アカウント ID と API トークンを持つ有効な Astra アカウントが必要です。を参照してください link:../get-started/get_api_token.html["API トークンを取得します"] を参照してください。
+
+
+
+== JSON 入力ファイルを作成します
+
+Python スクリプトは、 JSON 入力ファイルに含まれている設定情報に依存します。サンプルファイルは以下のとおりです。
+
+
+NOTE: 環境に応じて、サンプルを更新する必要があります。
+
+.ID 情報
+次のファイルに、 API トークンと Astra アカウントが含まれています。このファイルををを使用してPythonスクリプトに渡す必要があります `-i` （または `--identity`）CLIパラメータ。
+
+[source, json]
+----
+{
+  "api_token": "kH4CA_uVIa8q9UuPzhJaAHaGlaR7-no901DkkrVjIXk=",
+  "account_id": "5131dfdf-03a4-5218-ad4b-fe84442b9786"
+}
+----

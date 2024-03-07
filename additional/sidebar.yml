@@ -1,0 +1,12 @@
+---
+section: additional
+title: その他の考慮事項については
+entries:
+- title: RBACセキュリティ
+  url: "/additional/rbac.html"
+- title: コレクションを操作する
+  url: "/additional/work_with_collections.html"
+- title: 診断
+  url: "/additional/diagnostics_support.html"
+- title: API トークンを取り消します
+  url: "/additional/revoke_token.html"

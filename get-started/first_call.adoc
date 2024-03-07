@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: get-started/first_call.html 
+keywords: get started, first call, hello world 
+summary: ワークステーションのCLIで簡単なcurlコマンドを問題 して、Astra Control REST APIの使用を開始し、利用可能かどうかを確認することができます。 
+---
+= 最初のAPI呼び出し
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ワークステーションのCLIで簡単なcurlコマンドを問題 して、Astra Control REST APIの使用を開始し、利用可能かどうかを確認することができます。
+
+.作業を開始する前に
+Curl ユーティリティがローカルワークステーションで使用可能である必要があります。また、 API トークンと関連付けられているアカウント識別子も必要です。を参照してください link:get_api_token.html["API トークンを取得します"] を参照してください。
+
+.カールの例
+次の Curl コマンドは、 Astra ユーザのリストを取得します。図に示すように、適切な <account_ID> と <api_ctoken> を指定します。
+
+[source, curl]
+----
+curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/core/v1/users' --header 'Content-Type: application/json' --header 'Authorization: Bearer <API_TOKEN>'
+----
+.JSON 出力例
+[listing]
+----
+{
+  "items": [
+    [
+    "David",
+    "Anderson",
+    "844ec6234-11e0-49ea-8434-a992a6270ec1"
+    ],
+    [
+      "Jane",
+      "Cohen",
+      "2a3e227c-fda7-4145-a86c-ed9aa0183a6c"
+    ]
+  ],
+  "metadata": {}
+}
+----

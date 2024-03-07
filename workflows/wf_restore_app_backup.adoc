@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_restore_app_backup.html 
+keywords:  
+summary: アプリケーションをリストアするには、バックアップから新しいアプリケーションを作成します。 
+---
+= バックアップからアプリケーションをリストアする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+アプリケーションをリストアするには、バックアップから新しいアプリケーションを作成します。
+
+
+
+=== 1.復元するアプリを選択します
+
+ワークフローを実行 link:wf_list_man_apps.html["アプリを表示します"] をクリックし、クローニングするアプリケーションを選択します。アプリケーションのリストアに使用するREST呼び出しには、いくつかのリソース値が必要です。
+
+
+
+=== 2. 使用するバックアップを選択します
+
+ワークフローを実行 link:wf_list_backups.html["バックアップをリスト表示します"] 使用するバックアップを選択します。
+
+
+
+=== 3. アプリを復元します
+
+次の REST API 呼び出しを実行します。バックアップ（以下を参照）または Snapshot の ID を指定する必要があります。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| PUT | /accounts /｛account_id｝/k8s/v2/apps/｛app_id｝ 
+|===
+
+
+===== 追加の入力パラメータ
+
+すべての REST API 呼び出しに共通するパラメータに加えて、この手順の curl の例では次のパラメータも使用されます。
+
+[cols="25,10,10,55"]
+|===
+| パラメータ | を入力します | 必須 | 説明 
+
+
+| JSON | ボディ（ Body ） | はい。 | クローニングされたアプリケーションのパラメーターを提供します。以下の例を参照してください。 
+|===
+
+
+===== JSON の入力例
+
+[source, json]
+----
+{
+  "type": "application/astra-app",
+  "version": "2.0",
+  "backupID": "e24515bd-a28e-4b28-b832-f3c74dbf32fb"
+}
+----
+
+
+===== curl の例：バックアップからアプリを所定の場所にリストアします
+
+[source, curl]
+----
+curl --location -i --request PUT 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v2/apps/<APP_ID>' --header 'Content-Type: application/astra-app+json' --header '*/*' --header 'ForceUpdate: true' --header 'Authorization: Bearer <API_TOKEN>' --data @JSONinput
+----

@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_list_snapshots.html 
+keywords:  
+summary: 特定のアプリケーションに対して作成されたスナップショットを一覧表示できます。 
+---
+= Snapshot を一覧表示します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+特定のアプリケーションに対して作成されたスナップショットを一覧表示できます。
+
+
+
+=== 作業を開始する前に
+
+スナップショットを表示するアプリケーションのIDが必要です。必要に応じて、ワークフローを使用できます link:wf_list_man_apps.html["アプリを表示します"] アプリケーションを検索します。
+
+
+
+=== 1. スナップショットを一覧表示します
+
+次のREST API呼び出しを実行してSnapshotを表示します。
+
+[cols="25,75"]
+|===
+| HTTP メソッド | パス 
+
+
+| 取得 | /accounts /｛account_id｝/k8s/v1/apps/｛app_id｝/appSnaps 
+|===
+
+
+===== 追加の入力パラメータ
+
+すべての REST API 呼び出しに共通するパラメータに加えて、この手順の curl の例では次のパラメータも使用されます。
+
+[cols="15,10,10,65"]
+|===
+| パラメータ | を入力します | 必須 | 説明 
+
+
+| アプリケーションID | パス | はい。 | リストされたスナップショットを所有するアプリケーションを識別します。 
+
+
+| カウント | クエリ | いいえ | 状況 `count=true` Snapshotの数は応答のメタデータセクションに含まれています。 
+|===
+
+
+===== curl の例：アプリケーションのすべてのスナップショットを返します
+
+[source, curl]
+----
+curl --location -i --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/apps/<APP_ID>/appSnaps' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'
+----
+
+
+===== curl の例：アプリケーションのすべてのスナップショットとカウントを返します
+
+[source, curl]
+----
+curl --location -i --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/apps/<APP_ID>/appSnaps?count=true' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'
+----
+
+
+===== JSON 出力例
+
+[source, json]
+----
+{
+    "items": [
+        {
+            "type": "application/astra-appSnap",
+            "version": "1.1",
+            "id": "1ce34da4-bb0a-4926-b925-4a5d85dda8c2",
+            "hookState": "success",
+            "metadata": {
+                "createdBy": "a530e865-23e8-4e2e-8020-e92c419a3867",
+                "creationTimestamp": "2022-10-30T22:44:20Z",
+                "modificationTimestamp": "2022-10-30T22:44:20Z",
+                "labels": []
+            },
+            "snapshotAppAsset": "0ebfe3f8-40ed-4bdc-88c4-2144fbda85a0",
+            "snapshotCreationTimestamp": "2022-10-30T22:44:33Z",
+            "name": "snapshot-david-1",
+            "state": "completed",
+            "stateUnready": []
+        }
+    ],
+    "metadata": {}
+}
+----

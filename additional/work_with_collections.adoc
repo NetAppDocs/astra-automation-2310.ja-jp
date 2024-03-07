@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: additional/work_with_collections.html 
+keywords: collections, filtering, pagination, count 
+summary: Astra Control REST API には、定義されたクエリパラメータを使用してリソースコレクションにアクセスするためのさまざまな方法があります。 
+---
+= コレクションを操作する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Astra Control REST API には、定義されたクエリパラメータを使用してリソースコレクションにアクセスするためのさまざまな方法があります。
+
+.値の選択
+を使用して、各リソースインスタンスに対して返すキーと値のペアを指定できます `include` パラメータすべてのインスタンスが応答の本文で返されます。
+
+.フィルタリング
+収集リソースのフィルタリングを使用すると、 API ユーザは、応答の本文でリソースが返されるかどうかを決定する条件を指定できます。。 `filter` パラメータは、フィルタリング条件を示すために使用されます。
+
+.並べ替え
+収集リソースのソートを使用すると、 API ユーザは応答の本文でリソースが返される順序を指定できます。。 `orderBy` パラメータは、フィルタリング条件を示すために使用されます。
+
+.ページ付け
+ページ付けを適用するには、を使用して要求に対して返されるリソースインスタンスの数を制限します `limit` パラメータ
+
+.カウント
+Booleanパラメータを含める場合 `count` をに設定します `true`の場合、返される特定の応答について返されるアレイ内のリソースの数がメタデータセクションに表示されます。

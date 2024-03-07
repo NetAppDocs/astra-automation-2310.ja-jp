@@ -1,0 +1,52 @@
+---
+section: workflows
+title: 管理ワークフロー
+entries:
+- title: 作業を開始する前に
+  url: "/workflows/workflows_before.html"
+- title: アプリコントロール
+  entries:
+  - title: アプリを表示します
+    url: "/workflows/wf_list_man_apps.html"
+  - title: アプリを入手する
+    url: "/workflows/wf_get_man_app.html"
+  - title: アプリを管理します
+    url: "/workflows/wf_manage_app.html"
+  - title: アプリの管理を解除します
+    url: "/workflows/wf_unmanage_app.html"
+- title: アプリケーションの保護
+  entries:
+  - title: Snapshot をリストします
+    url: "/workflows/wf_list_snapshots.html"
+  - title: バックアップをリスト表示します
+    url: "/workflows/wf_list_backups.html"
+  - title: Snapshot を作成します
+    url: "/workflows/wf_create_snapshot.html"
+  - title: バックアップを作成します
+    url: "/workflows/wf_create_backup.html"
+  - title: Snapshot を削除します
+    url: "/workflows/wf_delete_snapshot.html"
+  - title: バックアップを削除します
+    url: "/workflows/wf_delete_backup.html"
+  - title: 保護ポリシーを作成する
+    url: "/workflows/wf_create_protection.html"
+- title: アプリケーションのクローニングとリストア
+  entries:
+  - title: アプリケーションのクローンを作成します
+    url: "/workflows/wf_clone_app.html"
+  - title: スナップショットからアプリケーションをクローニングします
+    url: "/workflows/wf_clone_app_snapshot.html"
+  - title: バックアップからアプリケーションをクローニングする
+    url: "/workflows/wf_clone_app_backup.html"
+  - title: バックアップからアプリケーションをリストアする
+    url: "/workflows/wf_restore_app_backup.html"
+- title: ネームスペース
+  entries:
+  - title: ネームスペースをリストします
+    url: "/workflows/wf_list_namespaces.html"
+- title: サポート
+  entries:
+  - title: 通知をリストします
+    url: "/workflows/wf_list_notifications.html"
+  - title: 失敗したアプリを削除します
+    url: "/workflows/wf_delete_failed_app.html"
