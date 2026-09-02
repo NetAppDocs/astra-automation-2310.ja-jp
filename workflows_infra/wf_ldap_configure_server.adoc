@@ -18,6 +18,7 @@ LDAPサーバを選択し、認証プロバイダとしてサーバを使用す�
 
 
 
+[[1-add-a-ca-certificate]]
 === 1. CA証明書を追加します
 
 次のREST API呼び出しを実行して、AstraにCA証明書を追加します。
@@ -112,6 +113,7 @@ curl --location -i --request POST --data @JSONinput 'https://astra.example.com/a
 ----
 
 
+[[2-add-the-bind-credentials]]
 === 2.バインドクレデンシャルを追加
 
 バインドクレデンシャルを追加するには、次のREST API呼び出しを実行します。
@@ -177,6 +179,7 @@ curl --location -i --request POST --data @JSONinput 'https://astra.example.com/a
 
 
 
+[[3-retrieve-the-uuid-of-the-ldap-setting]]
 === 3. LDAP設定のUUIDを取得します
 
 次のREST API呼び出しを実行して、のUUIDを取得します `astra.account.ldap` Astra Control Centerに付属している設定。
@@ -216,6 +219,7 @@ curl --location -i --request GET 'https://astra.example.com/accounts/<ACCOUNT_ID
 ----
 
 
+[[4-update-the-ldap-setting]]
 === 4. LDAP設定を更新します
 
 次のREST API呼び出しを実行してLDAP設定を更新し、設定を完了します。を使用します `id` の前回のAPI呼び出しで取得された値 `<SETTING_ID>` 次のURLパスの値。
@@ -272,6 +276,7 @@ curl --location -i --request PUT --data @JSONinput 'https://astra.example.com/ac
 
 
 
+[[5-retrieve-the-ldap-setting]]
 === 5. LDAP設定を取得します
 
 必要に応じて、次のREST API呼び出しを実行し、LDAP設定を取得して更新を確認することができます。

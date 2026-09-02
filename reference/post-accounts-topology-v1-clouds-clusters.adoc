@@ -7,6 +7,7 @@ summary: クラウド用の新しいクラスターを作成する
 ---
 = クラウド用の新しいクラスターを作成する
 :allow-uri-read: 
+:imagesdir: ../media/
 
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clouds/{cloud_id}/clusters`#
@@ -15,6 +16,7 @@ summary: クラウド用の新しいクラスターを作成する
 
 
 
+[[parameters]]
 == パラメータ
 
 [cols="5*"]
@@ -36,6 +38,7 @@ summary: クラウド用の新しいクラスターを作成する
 |===
 
 
+[[request-body]]
 == 要求の本文
 
 作成するクラスタ API リソースの希望値を指定します。
@@ -129,6 +132,7 @@ summary: クラウド用の新しいクラスターを作成する
 ====
 
 
+[[response]]
 == 応答
 
 [source]
@@ -501,6 +505,7 @@ Kubernetes（k8s）APIサービスオブジェクトからのUUIDを含むJSON�
 ====
 
 
+[[response]]
 == 応答
 
 [source]
@@ -546,6 +551,7 @@ Status: 401, Unauthorized
 ====
 
 
+[[response]]
 == 応答
 
 [source]
@@ -591,6 +597,7 @@ Status: 400, Bad request
 ====
 
 
+[[response]]
 == 応答
 
 [source]
@@ -641,6 +648,7 @@ Status: 409, Conflict
 ====
 
 
+[[response]]
 == 応答
 
 [source]
@@ -686,6 +694,7 @@ Status: 403, Forbidden
 ====
 
 
+[[response]]
 == 応答
 
 [source]
@@ -731,6 +740,7 @@ Status: 500, Internal server error
 ====
 
 
+[[error]]
 == エラー
 
 [source]
@@ -776,11 +786,13 @@ Status: 404, Not found
 ====
 
 
+[[definitions]]
 == 用語の意味
 
 .定義を参照
 [%collapsible]
 ====
+[[type_astra_label]]
 [role="api-collapsible-fifth-title"]
 type_astra_label
 
@@ -796,6 +808,7 @@ type_astra_label
 | Value | string | True  a| 
 
 |===
+[[type_astra_metadata_update]]
 [role="api-collapsible-fifth-title"]
 type_astra_metadata_update
 
@@ -828,9 +841,11 @@ type_astra_metadata_update
 | modifiedBy | string | False  a| 
 
 |===
+[[additionalDetails]]
 [role="api-collapsible-fifth-title"]
 additionalDetails
 
+[[type_astra_stateDetail]]
 [role="api-collapsible-fifth-title"]
 type_astra_stateDetail
 
@@ -854,6 +869,7 @@ type_astra_stateDetail
 | additionalDetails | link:#additionalDetails["additionalDetails"] | False  a| 
 
 |===
+[[invalidParams]]
 [role="api-collapsible-fifth-title"]
 invalidParams
 
@@ -871,6 +887,7 @@ invalidParams
 クエリパラメータが無効な理由
 
 |===
+[[invalidFields]]
 [role="api-collapsible-fifth-title"]
 invalidFields
 

@@ -18,18 +18,21 @@ summary: 使用可能なストレージクラスをリストできます。
 
 
 
+[[1-select-the-cloud]]
 === 1.クラウドを選択します
 
 ワークフローを実行 link:../workflows_infra/wf_list_clouds.html["クラウドをリストしてください"] 作業するクラウドを選択します。
 
 
 
+[[2-select-the-cluster]]
 === 2.クラスタを選択します
 
 ワークフローを実行 link:../workflows_infra/wf_list_clusters.html["クラスタをリストします"] をクリックし、クラスタを選択します。
 
 
 
+[[3-list-the-storage-classes-for-a-specific-cluster]]
 === 3.特定のクラスタのストレージクラスを一覧表示します
 
 次のREST API呼び出しを実行して、特定のクラスタとクラウドのストレージクラスを一覧表示します。

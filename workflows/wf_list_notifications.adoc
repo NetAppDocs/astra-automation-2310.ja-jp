@@ -18,6 +18,7 @@ summary: 特定のアストラアカウントの通知をリストできます�
 
 
 
+[[1-list-the-notifications]]
 === 1. 通知を一覧表示します
 
 次の REST API 呼び出しを実行します。

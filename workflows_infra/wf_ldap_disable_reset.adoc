@@ -24,6 +24,7 @@ summary: 必要に応じてAstra Control Centerの導入で実行できる、関
 
 
 
+[[disable-ldap-authentication]]
 == LDAP認証を無効にします
 
 次のREST API呼び出しを実行して、特定のアストラ環境に対してLDAP認証をグローバルに無効にすることができます。コールによってが更新されます `astra.account.ldap` の設定と `isEnabled` 値はに設定されます `false`。
@@ -65,6 +66,7 @@ curl --location -i --request PUT --data @JSONinput 'https://astra.example.com/ac
 
 
 
+[[reset-the-ldap-authentication-configuration]]
 == LDAP認証設定をリセットします
 
 次のREST API呼び出しを実行して、AstraをLDAPサーバから切断し、AstraでLDAP設定をリセットできます。コールによってが更新されます `astra.account.ldap` の設定と値 `connectionHost` がクリアされます。
