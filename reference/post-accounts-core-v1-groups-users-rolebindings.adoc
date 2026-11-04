@@ -127,7 +127,7 @@ summary: グループ内のユーザーに対して新しいロールバイン�
 
 * 
 +
-= 任意のクラウドの任意のクラスターにある「dev」とラベル付けされたすべての名前空間、およびその配下のすべてへのアクセスを許可します："roleConstraints": [ "namespaces:kubernetesLabels='http://dev.example.com/appname=dev["dev.example.com/appname=dev'.*"]" ]
+= 任意のクラウドの任意のクラスターにある「dev」とラベル付けされたすべての名前空間、およびその配下のすべてへのアクセスを許可します："roleConstraints": [ "namespaces:kubernetesLabels='dev.example.com/appname=dev'.*"]
 
 * 
 +
@@ -270,7 +270,7 @@ Status: 201, Returns the newly created roleBinding resource in the JSON response
 
 * 
 +
-= 任意のクラウドの任意のクラスターにある「dev」とラベル付けされたすべての名前空間、およびその配下のすべてへのアクセスを許可します："roleConstraints": [ "namespaces:kubernetesLabels='http://dev.example.com/appname=dev["dev.example.com/appname=dev'.*"]" ]
+= 任意のクラウドの任意のクラスターにある「dev」とラベル付けされたすべての名前空間、およびその配下のすべてへのアクセスを許可します："roleConstraints": [ "namespaces:kubernetesLabels='dev.example.com/appname=dev'.*"]
 
 * 
 +
