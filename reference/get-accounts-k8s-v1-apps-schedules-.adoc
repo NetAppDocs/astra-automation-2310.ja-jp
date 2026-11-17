@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-k8s-v1-apps-schedules-.html 
+keywords: account schedule,k8s schedule,app schedule,stored schedule,schedule listing 
 summary: スケジュールを取得する 
 ---
 = スケジュールを取得する
@@ -10,7 +11,20 @@ summary: スケジュールを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+保存されているスケジュールを取得します。これを使用して、スケジュール設定の詳細にアクセスして確認できます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/schedules/{schedule_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたSchedule APIリソースを返します。
 

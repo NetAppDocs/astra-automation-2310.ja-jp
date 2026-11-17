@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-core-v1-subscriptions.html 
+keywords: subscription,create subscription,account subscription,account id,subscription resource 
 summary: 新しいサブスクリプションを作成する 
 ---
 = 新しいサブスクリプションを作成する
@@ -10,7 +11,20 @@ summary: 新しいサブスクリプションを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+Subscription APIリソースに必要な値を指定して、新しいサブスクリプションを作成します。これを使用して、お客様のニーズに合わせてカスタマイズされた設定でサブスクリプションを開始してください。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/subscriptions`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成される Subscription API リソースの希望値を指定します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-k8s-v1-appmirrors.html 
+keywords: app mirror,app creation,container account,kubernetes mirror,k8s app 
 summary: 新しいAppMirrorリソースを作成する 
 ---
 = 新しいAppMirrorリソースを作成する
@@ -10,7 +11,20 @@ summary: 新しいAppMirrorリソースを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+環境間でのアプリケーションのレプリケーションと同期に必要な値を指定して、新しいAppMirrorリソースを作成します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/appMirrors`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成される AppMirror API リソースの希望する値を示します。
 

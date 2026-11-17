@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-core-v1-users-tokens-.html 
+keywords: remove token,credential removal,delete token,token resource,remove credential 
 summary: トークンを削除する 
 ---
 = トークンを削除する
@@ -10,7 +11,20 @@ summary: トークンを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+指定されたトークンを削除し、それに関連付けられた認証情報を認証情報サービスから削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/tokens/{token_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定された Token API リソースを削除します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-topology-v1-clouds-clusters.html 
+keywords: cluster creation,cloud clusters,account clusters,cloud resource,cluster resource 
 summary: クラウド用の新しいクラスターを作成する 
 ---
 = クラウド用の新しいクラスターを作成する
@@ -10,7 +11,20 @@ summary: クラウド用の新しいクラスターを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+クラウド環境用のクラスターを作成し、Cluster APIリソースに必要な構成を指定します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clouds/{cloud_id}/clusters`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するクラスタ API リソースの希望値を指定します。
 

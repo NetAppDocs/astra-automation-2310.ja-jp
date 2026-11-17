@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/post-accounts-core-v1-groups-users-tokens.html 
+keywords: token creation,account token,user token,group token,user management 
 summary: グループ内のユーザー向けに新しいトークンを作成する 
 ---
 = グループ内のユーザー向けに新しいトークンを作成する
@@ -10,7 +11,20 @@ summary: グループ内のユーザー向けに新しいトークンを作成�
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループ内のユーザーに対して新しいトークンを作成し、グループアクションの認証と承認に必要な値を指定します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/users/{user_id}/tokens`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成されるToken APIリソースの希望値を指定します。
 

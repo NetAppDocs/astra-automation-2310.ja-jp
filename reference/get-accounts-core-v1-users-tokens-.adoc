@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-users-tokens-.html 
+keywords: account resource,token collection,user resource,stored token,json response 
 summary: トークンを取得する 
 ---
 = トークンを取得する
@@ -10,7 +11,20 @@ summary: トークンを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+トークンを取得し、レスポンスで保存されているToken APIリソースを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/tokens/{token_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたToken APIリソースを返します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-notifications-.html 
+keywords: notification resource,stored notification,notification retrieval,account notification,notification collection 
 summary: 通知を取得する 
 ---
 = 通知を取得する
@@ -10,7 +11,20 @@ summary: 通知を取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+通知を取得し、保存されている通知リソースをレスポンスボディに含めて提供します。これを使用して、システム内の特定の通知に関する詳細情報にアクセスできます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/notifications/{notification_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納された通知APIリソースを返します。
 

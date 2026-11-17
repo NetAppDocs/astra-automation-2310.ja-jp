@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-clouds-clusters-storageclasses-.html 
+keywords: account storage class,cloud storage class,cluster storage class,storage class topology,storage class resource,storage class list 
 summary: クラウドのストレージクラスを取得します 
 ---
 = クラウドのストレージクラスを取得します
@@ -10,7 +11,20 @@ summary: クラウドのストレージクラスを取得します
 :imagesdir: ../media/
 
 
+[role="lead"]
+クラウドのストレージクラスを取得し、ストレージリソースで使用可能なクラス構成を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clouds/{cloud_id}/clusters/{cluster_id}/storageClasses/{storageClass_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されているStorage Class APIリソースを返します。
 

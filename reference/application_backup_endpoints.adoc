@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/application_backup_endpoints.html 
+keywords: application backups,backup creation,managed applications,data protection,backup retrieval 
 summary: Astra API（ACC）アプリケーションバックアップエンドポイント 
 ---
 = Astra API（ACC）アプリケーションバックアップエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+管理対象アプリケーションのバックアップを作成および表示して、そのデータを保護します。
 
 アプリケーションバックアップAPIを使用すると、ユーザーは管理対象アプリケーションのバックアップを作成および表示できます。

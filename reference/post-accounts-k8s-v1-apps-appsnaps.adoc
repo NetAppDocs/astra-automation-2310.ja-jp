@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-k8s-v1-apps-appsnaps.html 
+keywords: application snapshot,create snapshot,k8s apps,account resource,app resource 
 summary: アプリの新しいアプリケーションスナップショットを作成する 
 ---
 = アプリの新しいアプリケーションスナップショットを作成する
@@ -10,7 +11,20 @@ summary: アプリの新しいアプリケーションスナップショット�
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリの新しいアプリケーションスナップショットを作成し、バックアップや復元のためにアプリの現在の状態をキャプチャします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appSnaps`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するアプリケーションスナップショット API リソースの目的の値を示します。
 

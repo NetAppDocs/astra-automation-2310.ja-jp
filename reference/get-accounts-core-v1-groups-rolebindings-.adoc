@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-groups-rolebindings-.html 
+keywords: role binding,group role,account role,role permissions,stored role bindings 
 summary: グループのロールバインディングを取得します 
 ---
 = グループのロールバインディングを取得します
@@ -10,7 +11,20 @@ summary: グループのロールバインディングを取得します
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループのロールバインディングを取得し、指定されたグループIDに関連付けられたロールバインディングの詳細を提供します。これを使用して、Astra API内でグループに設定されている権限と関連付けを調べます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/roleBindings/{roleBinding_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されているロールバインディングAPIリソースを返します。リクエストが /accounts/{account_id}/core/v1/users/{user_id}/roleBindings エンドポイントに対するものである場合、リクエストURL内のユーザーIDと一致するユーザーIDを持つroleBindingリソースのみが読み取りを許可されます。リクエストが /accounts/{account_id}/core/v1/groups/{group_id}/roleBindings に対するものである場合、リクエストURL内のグループIDと一致するグループIDを持つroleBindingリソースのみが読み取りを許可されます。
 

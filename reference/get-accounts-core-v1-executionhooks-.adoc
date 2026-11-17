@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-executionhooks-.html 
+keywords: execution hook,execution hook resource,matching containers,matching images,matching criteria,execution hook collection 
 summary: 実行フックを取得する 
 ---
 = 実行フックを取得する
@@ -10,7 +11,20 @@ summary: 実行フックを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+実行フックを取得し、保存されているリソースの詳細、および現在の基準に基づいて一致するコンテナとイメージの情報を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/executionHooks/{executionHook_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに保存されたExecution Hook APIリソースを返します。また、現在のmatchingCriteriaと定義されたアプリに基づいて、matchingContainersおよびmatchingImagesに値を設定します。
 

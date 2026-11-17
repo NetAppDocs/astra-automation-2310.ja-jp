@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-asups-.html 
+keywords: autosupport download,asup resource,autosupport bundle,creation state,asup collection 
 summary: ASUPリソースを取得する 
 ---
 = ASUPリソースを取得する
@@ -10,7 +11,20 @@ summary: ASUPリソースを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ASUPリソースを取得し、監視および診断目的で保存されたAutoSupportデータへのアクセスを可能にします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/asups/{asup_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンス本文に格納された ASUP API リソースを返します。AutoSupport バンドルの「creationState」が「completed」または「partial」の場合、Accept ヘッダーに「_/_」または「application/gzip」を指定することで AutoSupport バンドルをダウンロードできます。
 

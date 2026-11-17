@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/get-accounts-core-v1-groups-users-unreadnotifications-.html 
+keywords: account notifications,unread notifications,user notifications,notification resource,group notifications 
 summary: グループ内のユーザーの未読通知を取得する 
 ---
 = グループ内のユーザーの未読通知を取得する
@@ -10,7 +11,20 @@ summary: グループ内のユーザーの未読通知を取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループ内のユーザーの未読通知を取得し、まだ確認されていない通知の詳細を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/users/{user_id}/unreadNotifications/{unreadNotification_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンス本文に格納されている未読通知APIリソースを返します。
 

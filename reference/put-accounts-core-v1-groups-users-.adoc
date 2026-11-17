@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/put-accounts-core-v1-groups-users-.html 
+keywords: update user,replacement operation,modify resource,group user management,account resource 
 summary: グループのユーザーを変更する 
 ---
 = グループのユーザーを変更する
@@ -10,7 +11,20 @@ summary: グループのユーザーを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+指定されたJSONリクエストボディで保存されているリソース全体を置き換えることにより、グループ内のユーザーを変更します。このエンドポイントを使用すると、変更不可能なキー値を保持したままユーザーの詳細を更新できます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/users/{user_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-clusters-clusternodes-.html 
+keywords: cluster node,cluster topology,account cluster,cluster details,node resource,cluster node list 
 summary: クラスタのクラスタノードを取得します 
 ---
 = クラスタのクラスタノードを取得します
@@ -10,7 +11,20 @@ summary: クラスタのクラスタノードを取得します
 :imagesdir: ../media/
 
 
+[role="lead"]
+クラスターのクラスターノードを取得し、指定されたクラスター内のノードの構成とステータスに関する詳細を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clusters/{cluster_id}/clusterNodes/{clusterNode_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されているクラスタノードAPIリソースを返します。
 

@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/token_endpoints.html 
+keywords: api tokens,access tokens,token creation,token management,authentication 
 summary: Astra API（ACC）トークンエンドポイント 
 ---
 = Astra API（ACC）トークンエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+Astra Controlでの認証に使用するAPIアクセストークンを作成および管理します。
 
 Token APIを使用すると、ユーザーはAPIアクセストークンを作成および管理できます。

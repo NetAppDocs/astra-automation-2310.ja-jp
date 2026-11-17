@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/get-accounts-core-v1-groups-users.html 
+keywords: account resource,group resource,collection fields,json array,resource listing,metadata object 
 summary: グループのユーザを一覧表示する 
 ---
 = グループのユーザを一覧表示する
@@ -10,7 +11,20 @@ summary: グループのユーザを一覧表示する
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループのユーザーを取得し、コレクション内の一致するすべてのリソースのJSON配列を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/users`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

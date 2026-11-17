@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-managedclusters-apiresources-.html 
+keywords: account resource,managed cluster,api resource,resource collection,resource id 
 summary: K8s APIリソースを取得する 
 ---
 = K8s APIリソースを取得する
@@ -10,7 +11,20 @@ summary: K8s APIリソースを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+K8s APIリソースを取得し、JSONレスポンスボディに特定のリソースを提供することで、詳細な調査や統合を可能にします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/managedClusters/{managedCluster_id}/apiResources/{apiResource_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンス本文で特定の API リソースを返します。
 

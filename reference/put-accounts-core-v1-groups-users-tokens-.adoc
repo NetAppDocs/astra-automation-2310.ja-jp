@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/put-accounts-core-v1-groups-users-tokens-.html 
+keywords: replace resource,account group,user token,core group,user replace,token id 
 summary: グループ内のユーザーのトークンを変更する 
 ---
 = グループ内のユーザーのトークンを変更する
@@ -10,7 +11,20 @@ summary: グループ内のユーザーのトークンを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループ内のユーザーのトークンを変更し、指定されたJSONリクエストボディに基づいて保存されているリソースを更新します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/users/{user_id}/tokens/{token_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

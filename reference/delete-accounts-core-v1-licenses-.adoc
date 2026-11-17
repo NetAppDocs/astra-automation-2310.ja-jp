@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-core-v1-licenses-.html 
+keywords: license removal,account license,license deletion,remove license,license entitlements,entitlement recalculation 
 summary: ライセンスの削除 
 ---
 = ライセンスの削除
@@ -10,7 +11,20 @@ summary: ライセンスの削除
 :imagesdir: ../media/
 
 
+[role="lead"]
+指定されたライセンスをシステムから削除します。このエンドポイントを使用して、ライセンス権限を効果的に管理してください。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/licenses/{license_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定された License API リソースを削除します。自動的にインストールされた評価版ライセンスは削除できません。
 

@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/metrics_endpoints.html 
+keywords: account metrics,usage metrics,astra control metrics,metrics retrieval,account monitoring 
 summary: Astra API（ACC）メトリクスエンドポイント 
 ---
 = Astra API（ACC）メトリクスエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+Astra Controlアカウントのメトリクスを取得して、そのアクティビティとリソース使用量を監視します。
 
 メトリクスAPIは、特定のアカウントに関連付けられたメトリクスを表します。

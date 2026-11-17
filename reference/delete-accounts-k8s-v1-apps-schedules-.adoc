@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-k8s-v1-apps-schedules-.html 
+keywords: remove schedule,k8s schedule,app schedule delete,delete schedule resource,account schedule removal 
 summary: スケジュールを削除する 
 ---
 = スケジュールを削除する
@@ -10,7 +11,20 @@ summary: スケジュールを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+スケジュールを削除し、指定されたSchedule APIリソースをAstraから削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/schedules/{schedule_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたスケジュールAPIリソースを削除します。
 

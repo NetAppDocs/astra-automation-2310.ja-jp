@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-appbackups.html 
+keywords: account topology,backup resources,collection fields,resource limit,account data 
 summary: すべてのアプリケーションのバックアップを一覧表示します 
 ---
 = すべてのアプリケーションのバックアップを一覧表示します
@@ -10,7 +11,20 @@ summary: すべてのアプリケーションのバックアップを一覧表�
 :imagesdir: ../media/
 
 
+[role="lead"]
+すべてのアプリケーションバックアップを取得し、コレクション内で利用可能なバックアップリソースの包括的なリストを提供します。リクエストで個々のフィールドを指定することで、返される情報をカスタマイズできます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/appBackups`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

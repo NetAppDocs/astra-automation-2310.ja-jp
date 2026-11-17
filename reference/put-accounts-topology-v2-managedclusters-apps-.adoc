@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-topology-v2-managedclusters-apps-.html 
+keywords: account topology,managed cluster,app resource,replace resource,force update 
 summary: 管理対象クラスタ用のアプリを変更する 
 ---
 = 管理対象クラスタ用のアプリを変更する
@@ -10,7 +11,20 @@ summary: 管理対象クラスタ用のアプリを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+管理対象クラスタ用のアプリケーションを変更し、保存されているリソース全体を指定されたJSONリクエストボディに置き換えます。ユーザーが変更できない重要な値を保持したまま、アプリの設定を更新するには、これを使用します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/topology/v2/managedClusters/{managedCluster_id}/apps/{app_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

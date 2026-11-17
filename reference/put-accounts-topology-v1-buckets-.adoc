@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-topology-v1-buckets-.html 
+keywords: replace resource,bucket management,data storage,account bucket,bucket topology 
 summary: バケットを変更する 
 ---
 = バケットを変更する
@@ -10,7 +11,20 @@ summary: バケットを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+指定された JSON リクエストボディを使用して、バケットに保存されているリソースを更新することでバケットを変更します。その際、重要なキー値は保持されます。これを使用することで、システムの整合性を維持しながら、バケットの設定が希望する設定を反映していることを確認できます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/buckets/{bucket_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

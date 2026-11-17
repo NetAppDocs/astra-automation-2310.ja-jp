@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-k8s-v1-apps-appsnaps-.html 
+keywords: application snapshot,delete snapshot,remove app snapshot,app snapshot removal,delete appSnap 
 summary: アプリケーションのスナップショットを削除します 
 ---
 = アプリケーションのスナップショットを削除します
@@ -10,7 +11,20 @@ summary: アプリケーションのスナップショットを削除します
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのスナップショットを削除し、指定されたスナップショットデータをリソースから削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appSnaps/{appSnap_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたアプリケーションスナップショットAPIリソースを削除します。
 

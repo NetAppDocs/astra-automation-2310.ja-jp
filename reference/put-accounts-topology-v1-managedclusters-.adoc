@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-topology-v1-managedclusters-.html 
+keywords: managed clusters,replace resource,kubernetes storage class,default storage class,account management,cluster management 
 summary: 管理対象クラスターを変更する 
 ---
 = 管理対象クラスターを変更する
@@ -10,7 +11,20 @@ summary: 管理対象クラスターを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+指定された JSON リクエストボディで保存されているリソース全体を置き換えることにより、管理対象クラスタを変更します。この操作では、ユーザーが変更できないキー値が保持されるため、クラスタの他の側面を更新しながらも、重要な構成はそのまま維持されます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/managedClusters/{managedCluster_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

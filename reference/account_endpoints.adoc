@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/account_endpoints.html 
+keywords: astra accounts,tenant accounts,multitenant,account management,account creation 
 summary: Astra API（ACC）アカウントエンドポイント 
 ---
 = Astra API（ACC）アカウントエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+マルチテナントのAstra Control環境でテナントを隔離するアカウントを管理します。
 
 アカウント API は、マルチテナントシステムにおける分離されたテナントを表します。

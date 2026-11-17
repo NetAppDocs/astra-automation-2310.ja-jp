@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-topology-v1-clouds-.html 
+keywords: replace resource,cloud topology,update rediscovery,sa cluster,stored resource 
 summary: クラウドを変更する 
 ---
 = クラウドを変更する
@@ -10,7 +11,20 @@ summary: クラウドを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+変更不可能なキー値を維持したまま、既存の設定を提供されたJSONリクエストボディに置き換えることで、クラウド リソースを変更します。これを使用して、ストレージアレイとクラスタの再検出を開始します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clouds/{cloud_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-core-v1-subscriptions-.html 
+keywords: subscription management,account update,resource replacement,status inactive,zuora integration 
 summary: サブスクリプションを変更する 
 ---
 = サブスクリプションを変更する
@@ -10,7 +11,20 @@ summary: サブスクリプションを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+保存されているリソースを、指定された JSON リクエストボディに置き換えることでサブスクリプションを変更します。ただし、ユーザーが変更できないキー値は維持されます。特定の値を変更せずにサブスクリプションの詳細を更新する必要がある場合は、このエンドポイントを使用してください。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/subscriptions/{subscription_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

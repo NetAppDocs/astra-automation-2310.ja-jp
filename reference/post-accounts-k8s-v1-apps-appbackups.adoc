@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-k8s-v1-apps-appbackups.html 
+keywords: application backup,account resource,app resource,k8s apps,kubernetes backup 
 summary: アプリの新しいアプリケーションバックアップを作成する 
 ---
 = アプリの新しいアプリケーションバックアップを作成する
@@ -10,7 +11,20 @@ summary: アプリの新しいアプリケーションバックアップを作�
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのバックアップを作成し、バックアップリソースに必要な構成を指定します。これを使用すると、アプリケーションの現在の状態を保存して、将来の復旧や分析に利用できます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appBackups`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するアプリケーションバックアップ API リソースの希望値を指定します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-core-v1-certificates-.html 
+keywords: certificate removal,account certificate,delete certificate,certificate management,remove certificate 
 summary: 証明書を削除する 
 ---
 = 証明書を削除する
@@ -10,7 +11,20 @@ summary: 証明書を削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+証明書を削除します。不要になった特定のCertificate APIリソースを削除するには、このエンドポイントを使用します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/certificates/{certificate_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定された証明書 API リソースを削除します。
 

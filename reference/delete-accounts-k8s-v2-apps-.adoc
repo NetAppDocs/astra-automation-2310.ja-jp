@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-k8s-v2-apps-.html 
+keywords: remove app,kubernetes app,delete application,app management,application state,deleting app 
 summary: アプリを削除する 
 ---
 = アプリを削除する
@@ -10,7 +11,20 @@ summary: アプリを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+Astraからアプリを削除し、指定されたApp APIリソースを削除して管理から切り離します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v2/apps/{app_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたアプリAPIリソースを削除します。
 

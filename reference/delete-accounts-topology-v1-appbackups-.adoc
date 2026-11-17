@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-topology-v1-appbackups-.html 
+keywords: application backup,delete backup,backup removal,backup data delete,delete app backup 
 summary: アプリケーションのバックアップを削除します 
 ---
 = アプリケーションのバックアップを削除します
@@ -10,7 +11,20 @@ summary: アプリケーションのバックアップを削除します
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのバックアップを削除します。指定されたバックアップリソースとその関連データが削除されます。これを使用して、ストレージ容量を管理したり、アプリケーションリソースから古いバックアップを削除したりできます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/appBackups/{appBackup_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたアプリケーションバックアップAPIリソースを削除します。進行中のバックアップはキャンセルされ、その後削除されます。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-k8s-v1-apps-executionhooks-.html 
+keywords: execution hook removal,delete execution hook,remove execution hook,kubernetes app,execution hook delete,execution hook actions 
 summary: アプリの実行フックを削除する 
 ---
 = アプリの実行フックを削除する
@@ -10,7 +11,20 @@ summary: アプリの実行フックを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリの実行フックを削除し、以降のアクションでアプリが実行されないようにします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/executionHooks/{executionHook_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定された実行フックAPIリソースを削除します。
 

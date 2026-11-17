@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-storagebackends-volumes-.html 
+keywords: volume resource,storage backend,account volume,volume collection,stored volume,volume details 
 summary: ストレージバックエンドのボリュームを取得します 
 ---
 = ストレージバックエンドのボリュームを取得します
@@ -10,7 +11,20 @@ summary: ストレージバックエンドのボリュームを取得します
 :imagesdir: ../media/
 
 
+[role="lead"]
+ストレージバックエンドのボリュームを取得し、保存されたボリュームAPIリソースを提供することで、さらなる検査や管理を可能にします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/storageBackends/{storageBackend_id}/volumes/{volume_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたVolume APIリソースを返します。
 

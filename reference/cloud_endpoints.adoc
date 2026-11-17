@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/cloud_endpoints.html 
+keywords: cloud resources,cloud connections,cloud management,managed clusters,cloud configuration 
 summary: Astra API（ACC）クラウドエンドポイント 
 ---
 = Astra API（ACC）クラウドエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+クラウドリソースを管理することで、特定のクラウドに接続し、そのクラウド上のクラスターやアプリケーションを管理できるようになります。
 
 クラウドAPIは、クライアントが特定のクラウドに接続してクラスターやアプリケーションを管理できるように、クラウドのリソースへのアクセスを提供します。

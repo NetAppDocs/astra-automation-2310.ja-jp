@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-subscriptions-.html 
+keywords: subscription resource,subscription id,account resource,account id,subscription collection 
 summary: サブスクリプションを取得する 
 ---
 = サブスクリプションを取得する
@@ -10,7 +11,20 @@ summary: サブスクリプションを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+サブスクリプションを取得し、監視または管理目的で保存されているサブスクリプションAPIリソースを返します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/subscriptions/{subscription_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたSubscription APIリソースを返します。
 

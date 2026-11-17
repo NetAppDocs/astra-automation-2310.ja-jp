@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-k8s-v1-apps-executionhookoverrides-.html 
+keywords: execution hook,hook override,replace resource,app execution,netapp hook,execution enable 
 summary: 実行フックオーバーライドリソースを変更する 
 ---
 = 実行フックオーバーライドリソースを変更する
@@ -10,7 +11,20 @@ summary: 実行フックオーバーライドリソースを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+実行フックのオーバーライドリソースを、保存されているリソース全体を指定されたJSONリクエストボディに置き換えることで変更します。この操作を使用して、指定されたアプリケーションに適用される実行フックを更新します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/executionHookOverrides/{executionHookOverride_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

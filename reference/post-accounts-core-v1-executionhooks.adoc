@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-core-v1-executionhooks.html 
+keywords: execution hook,account resource,execution values,create execution,execution setup 
 summary: 新しい実行フックを作成する 
 ---
 = 新しい実行フックを作成する
@@ -10,7 +11,20 @@ summary: 新しい実行フックを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+実行フックAPIリソースの値を指定して、新しい実行フックを作成します。これを使用して、ワークフローのカスタム自動化タスクを定義します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/executionHooks`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成する実行フックAPIリソースの希望値を示します。
 

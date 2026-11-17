@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/execution_hook_override_endpoints.html 
+keywords: execution hook override,preloaded hooks,netapp hooks,hook disabling,application hooks,deprecation 
 summary: Astra API（ACC）実行フックオーバーライドエンドポイント 
 ---
 = Astra API（ACC）実行フックオーバーライドエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+特定のアプリケーションのプリロードされたNetApp実行フックを無効にします。これらのエンドポイントを使用する前に、ページに記載されている非推奨情報を確認してください。
 
 実行フックオーバーライドAPIを使用すると、ユーザーは特定のアプリケーションに対してプリロードされている「netapp」実行フックを無効にすることができます。（*以下のAPI非推奨事項に注意*）

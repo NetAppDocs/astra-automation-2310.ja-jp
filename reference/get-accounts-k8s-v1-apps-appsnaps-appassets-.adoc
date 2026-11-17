@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/get-accounts-k8s-v1-apps-appsnaps-appassets-.html 
+keywords: application asset,app resource,app snap,app asset,stored asset,k8s application 
 summary: アプリケーションスナップショットとアプリのアプリケーションアセットを取得します 
 ---
 = アプリケーションスナップショットとアプリのアプリケーションアセットを取得します
@@ -10,7 +11,20 @@ summary: アプリケーションスナップショットとアプリのアプ�
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションスナップショットのアプリケーションアセットを取得し、保存されているアセットの詳細をJSONレスポンスボディに提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appSnaps/{appSnap_id}/appAssets/{appAsset_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンス ボディに格納されている Application Asset API リソースを返します。
 

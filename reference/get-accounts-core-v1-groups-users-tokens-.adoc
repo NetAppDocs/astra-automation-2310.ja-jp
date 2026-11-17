@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/get-accounts-core-v1-groups-users-tokens-.html 
+keywords: account resource,group resource,user resource,token collection,stored token 
 summary: グループ内のユーザーのトークンを取得する 
 ---
 = グループ内のユーザーのトークンを取得する
@@ -10,7 +11,20 @@ summary: グループ内のユーザーのトークンを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループ内のユーザーのトークンを取得し、保存されているAPIトークンリソースを返します。これを使用して認証を行い、グループ固有のリソースに安全にアクセスできます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/users/{user_id}/tokens/{token_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたToken APIリソースを返します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-users-rolebindings-.html 
+keywords: role binding,role permissions,user role,group role,account role,user permissions 
 summary: ユーザーのロールバインディングを取得します 
 ---
 = ユーザーのロールバインディングを取得します
@@ -10,7 +11,20 @@ summary: ユーザーのロールバインディングを取得します
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザーのロールバインディングを取得し、ユーザーのロールに関連付けられた特定の権限を提供します。これを使用して、アカウントまたはグループ内のリソースへのアクセスを管理するロールの割り当てを確認します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/roleBindings/{roleBinding_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されているロールバインディングAPIリソースを返します。リクエストが /accounts/{account_id}/core/v1/users/{user_id}/roleBindings エンドポイントに対するものである場合、リクエストURL内のユーザーIDと一致するユーザーIDを持つroleBindingリソースのみが読み取りを許可されます。リクエストが /accounts/{account_id}/core/v1/groups/{group_id}/roleBindings に対するものである場合、リクエストURL内のグループIDと一致するグループIDを持つroleBindingリソースのみが読み取りを許可されます。
 

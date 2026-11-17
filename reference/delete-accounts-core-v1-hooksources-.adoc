@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-core-v1-hooksources-.html 
+keywords: hook source,remove resource,delete hook,account management,remove hook 
 summary: フックソースを削除する 
 ---
 = フックソースを削除する
@@ -10,7 +11,20 @@ summary: フックソースを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+フックソースを削除し、指定されたリソースをシステムから削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/hookSources/{hookSource_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたフックソースAPIリソースを削除します。
 

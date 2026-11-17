@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-topology-v1-clouds-.html 
+keywords: cloud instance,deletion,non-managed clusters,non-managed volumes,cloud id 
 summary: クラウドを削除する 
 ---
 = クラウドを削除する
@@ -10,7 +11,20 @@ summary: クラウドを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+要求されたクラウドインスタンスと、それに関連付けられている管理対象外のクラスターおよびボリュームをすべて削除します。この操作を使用して、不要になったクラウドリソースを削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clouds/{cloud_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 要求されたクラウドインスタンスと、その特定のクラウドに関連付けられている管理対象外のクラスターおよびボリュームをすべて削除します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-hooksources.html 
+keywords: hook sources,resource collection,field filter,field limit,account resource 
 summary: すべてのフックソースを一覧表示 
 ---
 = すべてのフックソースを一覧表示
@@ -10,7 +11,20 @@ summary: すべてのフックソースを一覧表示
 :imagesdir: ../media/
 
 
+[role="lead"]
+コレクション内のすべてのフックソースを取得します。これを使用して、リクエストで指定された各リソースで使用可能なフィールドを表示します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/hookSources`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

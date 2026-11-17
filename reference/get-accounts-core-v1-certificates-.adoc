@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-certificates-.html 
+keywords: certificate resource,certificate collection,stored certificate,account certificate,certificate id 
 summary: 証明書を取得する 
 ---
 = 証明書を取得する
@@ -10,7 +11,20 @@ summary: 証明書を取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+レスポンスで、保存されている証明書APIリソースの詳細を提供するために、証明書を取得します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/certificates/{certificate_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたCertificate APIリソースを返します。
 

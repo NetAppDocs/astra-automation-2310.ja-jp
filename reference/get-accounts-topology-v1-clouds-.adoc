@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-clouds-.html 
+keywords: cloud resource,cloud topology,stored cloud,cloud collection,account resource 
 summary: クラウドを取得する 
 ---
 = クラウドを取得する
@@ -10,7 +11,20 @@ summary: クラウドを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+クラウド リソースを取得し、クラウド管理タスク用に保存されている構成詳細を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clouds/{cloud_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたCloud APIリソースを返します。
 

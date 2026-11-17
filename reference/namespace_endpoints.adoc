@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/namespace_endpoints.html 
+keywords: namespaces,kubernetes namespaces,cluster namespaces,namespace details,read-only access 
 summary: Astra API（ACC）ネームスペースエンドポイント 
 ---
 = Astra API（ACC）ネームスペースエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+クラスターに属するネームスペースを表示します。これらのエンドポイントは読み取り専用です。
 
 名前空間APIは、特定のクラスタに関連付けられた名前空間を記述するために、名前空間リソースへの読み取り専用アクセスを提供します。

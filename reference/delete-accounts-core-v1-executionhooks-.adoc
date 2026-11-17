@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-core-v1-executionhooks-.html 
+keywords: execution hook,execution removal,delete execution,remove execution hook,account resource,execution collection 
 summary: 実行フックを削除する 
 ---
 = 実行フックを削除する
@@ -10,7 +11,20 @@ summary: 実行フックを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+実行フックを削除し、今後のアクションで実行されないようにします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/executionHooks/{executionHook_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定された実行フックAPIリソースを削除します。
 

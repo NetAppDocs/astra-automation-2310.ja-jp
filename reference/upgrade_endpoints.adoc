@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/upgrade_endpoints.html 
+keywords: software upgrades,upgrade eligibility,component upgrades,upgrade initiation,upgrade packages 
 summary: Astra API（ACC）アップグレードエンドポイント 
 ---
 = Astra API（ACC）アップグレードエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+アップグレード対象となるソフトウェアコンポーネントを特定し、アップグレードを開始します。ご登録いただくパッケージによって、利用可能なアップグレードが決まります。
 
 Upgrade App APIは、アップグレード対象となるソフトウェアコンポーネントへのアクセスと、アップグレードの開始機能を提供します。アップグレードの提供状況は、Packages APIに登録されているパッケージに基づいて決定されます。

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-clouds-clusters-namespaces.html 
+keywords: cloud topology,resource collection,namespace list,field filter,cluster resources 
 summary: クラウドの名前空間を一覧表示する 
 ---
 = クラウドの名前空間を一覧表示する
@@ -10,7 +11,20 @@ summary: クラウドの名前空間を一覧表示する
 :imagesdir: ../media/
 
 
+[role="lead"]
+クラウドのネームスペースを取得し、コレクション内で利用可能な一致するすべてのリソースのリストを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clouds/{cloud_id}/clusters/{cluster_id}/namespaces`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

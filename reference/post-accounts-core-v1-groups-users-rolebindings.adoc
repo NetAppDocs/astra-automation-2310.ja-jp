@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/post-accounts-core-v1-groups-users-rolebindings.html 
+keywords: role binding,group roles,user roles,account role binding,user role binding 
 summary: グループ内のユーザーに対して新しいロールバインディングを作成する 
 ---
 = グループ内のユーザーに対して新しいロールバインディングを作成する
@@ -10,7 +11,20 @@ summary: グループ内のユーザーに対して新しいロールバイン�
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループ内のユーザーに対して新しいロールバインディングを作成し、指定されたグループコンテキスト内でユーザーがアクションを実行するための権限を確立します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/users/{user_id}/roleBindings`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するロールバインディングAPIリソースの希望値を示します。
 

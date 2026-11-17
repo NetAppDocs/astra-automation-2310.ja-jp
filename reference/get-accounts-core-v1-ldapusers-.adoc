@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-ldapusers-.html 
+keywords: ldap users,ldap resource,account id,ldap user collection,stored ldap 
 summary: LDAPユーザーを取得する 
 ---
 = LDAPユーザーを取得する
@@ -10,7 +11,20 @@ summary: LDAPユーザーを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+LDAPユーザーを取得し、ユーザー管理および認証タスクに必要な保存済みのリソース構成を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/ldapUsers/{ldapUser_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているLDAPリソースを表すJSONオブジェクトを返します。
 

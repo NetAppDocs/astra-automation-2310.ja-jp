@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/certificate_endpoints.html 
+keywords: trusted certificates,certificate management,outgoing connections,admin-trusted certificates,secure connections 
 summary: Astra API（ACC）証明書エンドポイント 
 ---
 = Astra API（ACC）証明書エンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+Astra Controlが発信接続を確立するために使用する、管理者が信頼する証明書を管理します。
 
 証明書アプリAPIは、送信接続の確立に使用される管理者信頼証明書を表します。

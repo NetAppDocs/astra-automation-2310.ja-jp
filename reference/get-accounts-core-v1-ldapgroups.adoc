@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-ldapgroups.html 
+keywords: ldap groups,account resources,list collection,field filter,resource limit 
 summary: すべてのLDAPグループを一覧表示 
 ---
 = すべてのLDAPグループを一覧表示
@@ -10,7 +11,20 @@ summary: すべてのLDAPグループを一覧表示
 :imagesdir: ../media/
 
 
+[role="lead"]
+LDAPグループのリストを取得し、管理および統合目的でグループ構成へのアクセスを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/ldapGroups`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 リクエストURLの結果を含むJSONオブジェクトのJSON配列を返します。
 

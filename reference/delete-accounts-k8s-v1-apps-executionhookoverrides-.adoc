@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-k8s-v1-apps-executionhookoverrides-.html 
+keywords: execution hook override,override removal,delete execution hook,execution hook enable,hook type netapp 
 summary: 実行フックオーバーライドリソースを削除します 
 ---
 = 実行フックオーバーライドリソースを削除します
@@ -10,7 +11,20 @@ summary: 実行フックオーバーライドリソースを削除します
 :imagesdir: ../media/
 
 
+[role="lead"]
+実行フックのオーバーライドリソースを削除します。これを使用して、アプリケーション内の実行フックのカスタム設定を削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/executionHookOverrides/{executionHookOverride_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定された実行フックオーバーライド API リソースを削除します。
 

@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/group_endpoints.html 
+keywords: astra groups,group management,group membership,user groups,group creation 
 summary: Astra API（ACC）グループエンドポイント 
 ---
 = Astra API（ACC）グループエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+Astra Controlで、グループに属するユーザーを含めてグループを管理します。
 
 グループAPIは、Astraグループリソースへのアクセスを提供します。

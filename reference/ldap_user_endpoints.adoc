@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/ldap_user_endpoints.html 
+keywords: ldap users,directory users,ldap server,read-only access,user lookup 
 summary: Astra API（ACC）LDAPユーザエンドポイント 
 ---
 = Astra API（ACC）LDAPユーザエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+設定済みのLightweight Directory Access Protocol（LDAP）サーバー上のユーザーを表示します。これらのエンドポイントは読み取り専用です。
 
 LDAP User APIは、設定されたLDAPサーバ内のLDAPユーザーへの読み取り専用アクセスを提供します。

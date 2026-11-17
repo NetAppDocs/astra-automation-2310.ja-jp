@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts.html 
+keywords: create account,account resource,new account,account creation,account setup 
 summary: 新しいアカウントを作成する 
 ---
 = 新しいアカウントを作成する
@@ -10,7 +11,20 @@ summary: 新しいアカウントを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+アカウントAPIリソースに必要な値を指定して、新しいアカウントを作成します。これを使用して、サービスにアクセスするためのアカウントの詳細を設定および構成します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するアカウント API リソースの希望値を示します。
 

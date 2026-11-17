@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-k8s-v1-apps-appsnaps-.html 
+keywords: application snapshot,k8s apps,stored snapshot,account resource,appSnap collection 
 summary: アプリケーションのスナップショットを取得する 
 ---
 = アプリケーションのスナップショットを取得する
@@ -10,7 +11,20 @@ summary: アプリケーションのスナップショットを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのスナップショットを取得し、保存されたスナップショットデータをレビューまたは分析用に提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appSnaps/{appSnap_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンスボディに格納されたアプリケーションスナップショット API リソースを返します。
 

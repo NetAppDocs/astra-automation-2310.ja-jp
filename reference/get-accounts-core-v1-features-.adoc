@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-features-.html 
+keywords: feature resource,feature collection,account id,feature id,stored feature 
 summary: 機能を取得する 
 ---
 = 機能を取得する
@@ -10,7 +11,20 @@ summary: 機能を取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+機能を取得し、検証または統合の目的で保存されているFeature APIリソースを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/features/{feature_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンスボディに格納されている Feature API リソースを返します。
 

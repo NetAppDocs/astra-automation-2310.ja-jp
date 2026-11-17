@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/delete-accounts-core-v1-users-groups-.html 
+keywords: remove group,group resource,role bindings,user group,user resource,account resource 
 summary: ユーザーのグループを削除する 
 ---
 = ユーザーのグループを削除する
@@ -10,7 +11,20 @@ summary: ユーザーのグループを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザーのグループを削除し、指定されたグループAPIリソースを削除します。グループを参照するロールバインディングなど、関連するリソースも削除されます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/groups/{group_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたグループ API リソースを削除します。
 

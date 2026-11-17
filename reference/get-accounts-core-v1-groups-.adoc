@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-groups-.html 
+keywords: account resource,group collection,stored group,group resource,json response,account id 
 summary: グループを取得する 
 ---
 = グループを取得する
@@ -10,7 +11,20 @@ summary: グループを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループを取得し、保存されているグループリソースの詳細をレビューまたは統合目的で提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたGroup APIリソースを返します。
 

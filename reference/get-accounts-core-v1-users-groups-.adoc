@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/get-accounts-core-v1-users-groups-.html 
+keywords: account resource,user resource,group collection,stored group,group resource 
 summary: ユーザーのグループを取得する 
 ---
 = ユーザーのグループを取得する
@@ -10,7 +11,20 @@ summary: ユーザーのグループを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザーのグループを取得し、保存されているグループ情報を構造化された形式で提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/groups/{group_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたGroup APIリソースを返します。
 

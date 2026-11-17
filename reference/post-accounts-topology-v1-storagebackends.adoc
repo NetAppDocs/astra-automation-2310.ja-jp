@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-topology-v1-storagebackends.html 
+keywords: storage backend,account storage,create storage,backend creation,topology storage 
 summary: 新しいストレージバックエンドを作成する 
 ---
 = 新しいストレージバックエンドを作成する
@@ -10,7 +11,20 @@ summary: 新しいストレージバックエンドを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+リソースに必要な構成値を指定して、新しいストレージバックエンドを作成します。このエンドポイントを使用して、要件に合わせたストレージバックエンドを設定してください。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/storageBackends`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するStorage Backend APIリソースの希望値を指定します。
 

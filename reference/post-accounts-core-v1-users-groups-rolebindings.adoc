@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/post-accounts-core-v1-users-groups-rolebindings.html 
+keywords: role binding,account role,user role,group role,core role binding,role creation 
 summary: ユーザーに関連付けられたグループに対して新しいロールバインディングを作成する 
 ---
 = ユーザーに関連付けられたグループに対して新しいロールバインディングを作成する
@@ -10,7 +11,20 @@ summary: ユーザーに関連付けられたグループに対して新しい�
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザーに関連付けられたグループに対して、ロールバインディングを作成します。これを使用して、Astra API環境内のグループに特定の権限を割り当てます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/groups/{group_id}/roleBindings`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するロールバインディングAPIリソースの希望値を示します。
 

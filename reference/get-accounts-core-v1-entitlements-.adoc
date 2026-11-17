@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-entitlements-.html 
+keywords: account entitlement,entitlement resource,entitlement collection,account information,stored entitlement 
 summary: 権利を取得する 
 ---
 = 権利を取得する
@@ -10,7 +11,20 @@ summary: 権利を取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+エンタイトルメントを取得し、保存されているエンタイトルメントAPIリソースをJSONレスポンスボディに提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/entitlements/{entitlement_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンスボディに格納されている Entitlement API リソースを返します。
 

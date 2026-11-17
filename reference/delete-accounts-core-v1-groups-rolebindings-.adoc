@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-core-v1-groups-rolebindings-.html 
+keywords: role binding,remove role,delete role binding,user removal,group resource,account resource 
 summary: グループのロールバインディングを削除します 
 ---
 = グループのロールバインディングを削除します
@@ -10,7 +11,20 @@ summary: グループのロールバインディングを削除します
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループのロールバインディングを削除し、Astra API環境内におけるグループと指定されたロールとの関連付けを解除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/roleBindings/{roleBinding_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたロールバインディングAPIリソースを削除します。
 

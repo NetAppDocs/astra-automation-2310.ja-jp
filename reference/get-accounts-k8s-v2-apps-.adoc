@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-k8s-v2-apps-.html 
+keywords: account resource,app collection,stored app,k8s resource,json response 
 summary: アプリを取得する 
 ---
 = アプリを取得する
@@ -10,7 +11,20 @@ summary: アプリを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+Astra APIからアプリを取得し、さらなる分析や管理のために保存されたアプリケーションの詳細を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v2/apps/{app_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたApp APIリソースを返します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-topology-v1-storagebackends-.html 
+keywords: storage backend,remove storage backend,delete storage backend,backend config removal,backend node removal,remove backend resources 
 summary: ストレージバックエンドを削除 
 ---
 = ストレージバックエンドを削除
@@ -10,7 +11,20 @@ summary: ストレージバックエンドを削除
 :imagesdir: ../media/
 
 
+[role="lead"]
+ストレージバックエンドを削除します。このアクションを使用して、関連するすべてのbackendConfigおよびbackendNodeリソースをシステムから削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/storageBackends/{storageBackend_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定された Storage Backend API リソースを削除します。
 

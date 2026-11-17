@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-.html 
+keywords: remove account,delete account,account removal,account management,account id,deletion effects 
 summary: アカウントを削除する 
 ---
 = アカウントを削除する
@@ -10,7 +11,20 @@ summary: アカウントを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+アカウントを削除し、指定されたAccount APIリソースへのアクセスと操作を削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたアカウント API リソースを削除します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-users-unreadnotifications-.html 
+keywords: unread notifications,user notifications,notification list,account notifications,user unread,notification resource 
 summary: 未読通知を取得する 
 ---
 = 未読通知を取得する
@@ -10,7 +11,20 @@ summary: 未読通知を取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+未読の通知を取得し、保存されている通知の詳細を表示して、確認または対応できるようにします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/unreadNotifications/{unreadNotification_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンス本文に格納されている未読通知APIリソースを返します。
 

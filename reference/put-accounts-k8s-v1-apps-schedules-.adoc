@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-k8s-v1-apps-schedules-.html 
+keywords: replace resource,schedule update,account management,app scheduling,modify schedule 
 summary: スケジュールを変更する 
 ---
 = スケジュールを変更する
@@ -10,7 +11,20 @@ summary: スケジュールを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+保存されているリソースを、指定された JSON リクエストボディに置き換えることでスケジュールを変更します。ただし、ユーザーが変更できないキー値は保持されます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/schedules/{schedule_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

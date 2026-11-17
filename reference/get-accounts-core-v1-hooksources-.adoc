@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-hooksources-.html 
+keywords: hook source,hook collection,account resource,stored resource,json response 
 summary: フックソースを取得 
 ---
 = フックソースを取得
@@ -10,7 +11,20 @@ summary: フックソースを取得
 :imagesdir: ../media/
 
 
+[role="lead"]
+フックソースを取得し、レスポンスとして保存されているフックソースAPIリソースを返します。これを使用して、統合タスク用の特定のフックソース構成にアクセスします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/hookSources/{hookSource_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されているHook Source APIリソースを返します。
 

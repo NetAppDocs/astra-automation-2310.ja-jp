@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-licenses-.html 
+keywords: license resource,license collection,account resource,license id,account id 
 summary: ライセンスを取得する 
 ---
 = ライセンスを取得する
@@ -10,7 +11,20 @@ summary: ライセンスを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+保存されているライセンスAPIリソースの詳細を提供し、ライセンスを取得します。これを使用して、現在のライセンス構成を確認し、ライセンス要件への準拠を確保してください。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/licenses/{license_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンスボディに格納された License API リソースを返します。
 

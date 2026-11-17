@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-upgrades-.html 
+keywords: upgrade resource,upgrade details,upgrade collection,account upgrade,upgrade json 
 summary: アップグレードを取得する 
 ---
 = アップグレードを取得する
@@ -10,7 +11,20 @@ summary: アップグレードを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+アップグレードリソースを取得し、保存されているアップグレード構成をレビューまたは管理目的で提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/upgrades/{upgrade_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンス ボディに格納されている Upgrade API リソースを返します。
 

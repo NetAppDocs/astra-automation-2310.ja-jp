@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-namespaces-.html 
+keywords: namespace resource,namespace collection,stored namespace,account id,namespace id 
 summary: 名前空間を取得する 
 ---
 = 名前空間を取得する
@@ -10,7 +11,20 @@ summary: 名前空間を取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ネームスペースを取得し、アプリケーションデータを管理するために保存されているネームスペースAPIリソースへのアクセスを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/namespaces/{namespace_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されている名前空間APIリソースを返します。
 

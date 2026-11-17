@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-core-v1-asups.html 
+keywords: asup creation,account resource,core v1,account id,netapp ontap 
 summary: 新しいASUPリソースを作成します 
 ---
 = 新しいASUPリソースを作成します
@@ -10,7 +11,20 @@ summary: 新しいASUPリソースを作成します
 :imagesdir: ../media/
 
 
+[role="lead"]
+自動サポートアップロードに必要な値を指定するためのASUPリソースを作成します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/asups`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するASUP APIリソースの希望値を示します。
 

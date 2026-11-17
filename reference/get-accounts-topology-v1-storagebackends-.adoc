@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-storagebackends-.html 
+keywords: storage backend,account resource,topology storage,backend collection,storage resource 
 summary: ストレージバックエンドを取得する 
 ---
 = ストレージバックエンドを取得する
@@ -10,7 +11,20 @@ summary: ストレージバックエンドを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ストレージバックエンドを取得し、バックエンドリソースの保存済み構成詳細を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/storageBackends/{storageBackend_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたStorage Backend APIリソースを返します。
 

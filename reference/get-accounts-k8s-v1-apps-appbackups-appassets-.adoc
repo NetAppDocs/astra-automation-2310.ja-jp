@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/get-accounts-k8s-v1-apps-appbackups-appassets-.html 
+keywords: account resource,app resource,app backup,app asset,stored resource,json response 
 summary: アプリのアプリケーションバックアップからアプリケーションアセットを取得する 
 ---
 = アプリのアプリケーションバックアップからアプリケーションアセットを取得する
@@ -10,7 +11,20 @@ summary: アプリのアプリケーションバックアップからアプリ�
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのバックアップからアプリケーション資産を取得し、保存されているリソースをJSONレスポンスボディに提供します。このエンドポイントを使用して、復旧または分析のために特定の資産にアクセスします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appBackups/{appBackup_id}/appAssets/{appAsset_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンス ボディに格納されている Application Asset API リソースを返します。
 

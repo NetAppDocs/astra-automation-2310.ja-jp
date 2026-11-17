@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v2-managedclusters-apps-.html 
+keywords: stored app,app resource,managed cluster,app collection,account resource 
 summary: 管理対象クラスタのアプリを取得します 
 ---
 = 管理対象クラスタのアプリを取得します
@@ -10,7 +11,20 @@ summary: 管理対象クラスタのアプリを取得します
 :imagesdir: ../media/
 
 
+[role="lead"]
+管理対象クラスターのアプリを取得し、保存されているApp APIリソースの詳細をJSONレスポンスボディで提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v2/managedClusters/{managedCluster_id}/apps/{app_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたApp APIリソースを返します。
 

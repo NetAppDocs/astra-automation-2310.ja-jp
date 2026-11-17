@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-core-v1-groups-rolebindings-.html 
+keywords: replace resource,role bindings,account group,modify role,update role bindings 
 summary: グループのロールバインディングを変更する 
 ---
 = グループのロールバインディングを変更する
@@ -10,7 +11,20 @@ summary: グループのロールバインディングを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループのロールバインディングを変更します。これを使用して、環境内の特定のユーザーグループに関連付けられたアクセス権限を更新します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/roleBindings/{roleBinding_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

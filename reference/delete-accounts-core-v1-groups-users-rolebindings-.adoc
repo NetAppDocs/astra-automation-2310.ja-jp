@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/delete-accounts-core-v1-groups-users-rolebindings-.html 
+keywords: role binding,remove role,delete user,group resource,user role,account role 
 summary: グループ内のユーザーのロールバインディングを削除します 
 ---
 = グループ内のユーザーのロールバインディングを削除します
@@ -10,7 +11,20 @@ summary: グループ内のユーザーのロールバインディングを削�
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループ内のユーザーに対するロールバインディングを削除し、指定されたロールバインディングの関連付けをグループから削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/users/{user_id}/roleBindings/{roleBinding_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたロールバインディングAPIリソースを削除します。
 

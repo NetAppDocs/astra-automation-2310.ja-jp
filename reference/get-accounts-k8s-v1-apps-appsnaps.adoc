@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-k8s-v1-apps-appsnaps.html 
+keywords: account resources,k8s apps,app snapshots,collection fields,resource limit 
 summary: アプリのアプリケーションスナップショットを一覧表示する 
 ---
 = アプリのアプリケーションスナップショットを一覧表示する
@@ -10,7 +11,20 @@ summary: アプリのアプリケーションスナップショットを一覧�
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのスナップショットを取得し、アプリケーションで使用可能なスナップショットの包括的なビューを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appSnaps`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

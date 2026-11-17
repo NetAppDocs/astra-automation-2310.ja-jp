@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-groups-rolebindings.html 
+keywords: role bindings,group roles,account resources,collection filters,resource sorting 
 summary: グループのロールバインディングを一覧表示する 
 ---
 = グループのロールバインディングを一覧表示する
@@ -10,7 +11,20 @@ summary: グループのロールバインディングを一覧表示する
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループのロールバインディングを取得し、コレクション内の一致するリソースのリストを提供します。これを使用して、グループに関連付けられた特定のロールバインディングに関する詳細情報にアクセスします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/roleBindings`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

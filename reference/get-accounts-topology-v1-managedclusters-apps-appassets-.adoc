@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-managedclusters-apps-appassets-.html 
+keywords: application asset,managed cluster,app assets,stored resource,json response 
 summary: 管理対象クラスタのアプリケーションアセットを取得する 
 ---
 = 管理対象クラスタのアプリケーションアセットを取得する
@@ -10,7 +11,20 @@ summary: 管理対象クラスタのアプリケーションアセットを取�
 :imagesdir: ../media/
 
 
+[role="lead"]
+管理対象クラスタのアプリケーションアセットを取得し、管理タスクに必要な保存済みリソースの詳細へのアクセスを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/managedClusters/{managedCluster_id}/apps/{app_id}/appAssets/{appAsset_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンス ボディに格納されている Application Asset API リソースを返します。
 

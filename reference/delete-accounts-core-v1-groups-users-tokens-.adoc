@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/delete-accounts-core-v1-groups-users-tokens-.html 
+keywords: remove token,delete token,credential removal,token deletion,account token removal 
 summary: グループ内のユーザーのトークンを削除する 
 ---
 = グループ内のユーザーのトークンを削除する
@@ -10,7 +11,20 @@ summary: グループ内のユーザーのトークンを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループ内のユーザーのトークンを削除します。この操作により、指定されたトークンAPIリソースおよびそれに関連付けられた認証情報がサービスから削除されます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/users/{user_id}/tokens/{token_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定された Token API リソースを削除します。
 

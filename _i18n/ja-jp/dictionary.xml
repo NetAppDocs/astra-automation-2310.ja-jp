@@ -3627,4 +3627,286 @@
   <block id="737bc377487d23f0154efaa2567b0ce5" category="sidebar">Kubernetes APIリソース</block>
   <block id="f32c3edaacea72c0ddb30ecf0135c4de" category="sidebar">Metrics</block>
   <block id="0e67fb376700a4be55101af1471c0ad4" category="paragraph">= 任意のクラウドの任意のクラスターにある「dev」とラベル付けされたすべての名前空間、およびその配下のすべてへのアクセスを許可します："roleConstraints": [ "namespaces:kubernetesLabels='dev.example.com/appname=dev'.*"]</block>
+  <block id="5f2270e824485ec1bd38768a5d041b21" category="paragraph">マルチテナントのAstra Control環境でテナントを隔離するアカウントを管理します。</block>
+  <block id="ad197c6ed47b4d0504d3028ccafc0f95" category="paragraph">Astra Controlが管理していないアプリケーションを含め、クラスタ上のKubernetesアプリケーションを操作します。</block>
+  <block id="676a3c8165055525528a59fd78040aff" category="paragraph">Astra Controlがアプリケーションの管理に使用する状態情報の内部コレクションにアクセスします。</block>
+  <block id="1d1b6830e2682268cbf67ad6f45c58d1" category="paragraph">管理対象アプリケーションのバックアップを作成および表示して、そのデータを保護します。</block>
+  <block id="9b98cd4fa4fcf577fb10ab4e57d0cc76" category="paragraph">管理対象アプリケーションのスナップショットを作成および表示します。</block>
+  <block id="d8f57cd358396f606661f15842d9781b" category="paragraph">アプリケーションのAppMirror関係を管理します。</block>
+  <block id="6b844af24cd9dbe913750adb7bbce08b" category="paragraph">Astra Controlタスクを自動化するために必要なエンドポイント、HTTPメソッド、入力パラメータ、およびレスポンスを確認します。APIを使用すると、Astra Controlリソースに対する作成、読み取り、更新、および削除アクセスが可能になります。</block>
+  <block id="934400adb425f95c96e7002f80a2b037" category="paragraph">トラブルシューティングに役立てるため、AutoSupport（ASUP）バンドルを作成し、必要に応じてNetAppにアップロードします。</block>
+  <block id="05b157594c762d627b8703135d135d7a" category="paragraph">Astra Controlがアプリケーションのバックアップを保存するために使用するバケットを管理します。</block>
+  <block id="f7dc0ad0904e05696f0cd0e954126d50" category="paragraph">Astra Controlが発信接続を確立するために使用する、管理者が信頼する証明書を管理します。</block>
+  <block id="84ea8d3a5c5951374fc324e4d7d5441f" category="paragraph">クラウドリソースを管理することで、特定のクラウドに接続し、そのクラウド上のクラスターやアプリケーションを管理できるようになります。</block>
+  <block id="436b859dc1288380b7ad488bcb79672a" category="paragraph">Astra Controlがまだ管理していないKubernetesクラスタを操作します。</block>
+  <block id="135bd225d7d61e8c13d3c35437c66ce3" category="paragraph">クラスターに属するノードを表示します。</block>
+  <block id="407095c463222124f45afbd4f59c2bbc" category="paragraph">Astra Controlで機密情報を含むオブジェクトを安全に保管および管理します。</block>
+  <block id="9b554b7394a86367d5d96fb7aabb16de" category="paragraph">アカウントを削除し、指定されたAccount APIリソースへのアクセスと操作を削除します。</block>
+  <block id="aeeec844965e3df4410c1eb088d94a03" category="section-title">HTTPメソッドとエンドポイント</block>
+  <block id="99a7b4bfcd6a852c028d5e28e6814502" category="paragraph">証明書を削除します。不要になった特定のCertificate APIリソースを削除するには、このエンドポイントを使用します。</block>
+  <block id="6f49f9507fe3268a9e164889aa16b8bd" category="paragraph">認証情報リソースを削除し、指定された認証情報に関連付けられたアクセス権を削除します。これは、アクセス権を取り消したり、システムから古い認証情報を削除したりする必要がある場合に役立ちます。</block>
+  <block id="886d9f4de5401f9b65f21a714c9b1f38" category="paragraph">実行フックを削除し、今後のアクションで実行されないようにします。</block>
+  <block id="00ab3db6af0492d35270432dcb7963d9" category="paragraph">指定されたグループリソースを削除します。これを使用して、グループとその関連付けられたロールバインディングをシステムから削除します。</block>
+  <block id="606e6094ec316a8498ce2e501c52e9dc" category="paragraph">グループのロールバインディングを削除し、Astra API環境内におけるグループと指定されたロールとの関連付けを解除します。</block>
+  <block id="d76b28d3c03ac7933c17fd3a98a635d3" category="paragraph">グループのユーザーを削除し、指定されたユーザーAPIリソースと、通知マーク、トークン、ロールバインディングなどの関連リソースを削除します。</block>
+  <block id="c3099cd9cba1e92b29693b470815a1eb" category="paragraph">グループ内のユーザーに対するロールバインディングを削除し、指定されたロールバインディングの関連付けをグループから削除します。</block>
+  <block id="5692b0b1c111da3a9fd3859d52cf3ecd" category="paragraph">グループ内のユーザーのトークンを削除します。この操作により、指定されたトークンAPIリソースおよびそれに関連付けられた認証情報がサービスから削除されます。</block>
+  <block id="76790843f314f12b882ee4da87a5f9af" category="paragraph">グループ内のユーザーに対する未読通知を削除します。グループ内でのやり取りにおける通知ステータスを管理・維持するために、これを使用します。</block>
+  <block id="b61576e26fc4c14daaacfea08f51508c" category="paragraph">フックソースを削除し、指定されたリソースをシステムから削除します。</block>
+  <block id="f64672f853c3d04024fceaa3f39e88fa" category="paragraph">指定されたライセンスをシステムから削除します。このエンドポイントを使用して、ライセンス権限を効果的に管理してください。</block>
+  <block id="37d72510e687acdd71d9b3cd2572c794" category="paragraph">パッケージを削除し、指定されたパッケージ API リソースをシステムから削除します。</block>
+  <block id="99f073908a093f32b4c9c0fa7cea59fb" category="paragraph">ロールバインディングを削除し、指定されたAPIリソースをシステムから削除します。</block>
+  <block id="7e8eb4ae7c396f210294bd528b988f2f" category="paragraph">サブスクリプションを削除し、指定されたサブスクリプションAPIリソースと、それに関連するすべての料金を削除します。</block>
+  <block id="5591cff09eca3866398e77ca2bd37d73" category="paragraph">Astra APIからユーザーを削除し、通知マーク、トークン、ロールバインディングなどの関連リソースを削除します。</block>
+  <block id="c896f34b94a3e3bd5af16267e77eaeda" category="paragraph">ユーザーのグループを削除し、指定されたグループAPIリソースを削除します。グループを参照するロールバインディングなど、関連するリソースも削除されます。</block>
+  <block id="30e125b83355a9a57ae3b91a12deae72" category="paragraph">ユーザーに関連付けられているグループのロールバインディングを削除します。これを使用して、システム内のアクセスと権限を効果的に管理します。</block>
+  <block id="7a58b5604eae261a234688607b29cfa4" category="paragraph">指定されたロールバインディングAPIリソースを削除することで、ユーザーのロールバインディングを削除します。</block>
+  <block id="3da46eb2373588de47de9f473f80fe28" category="paragraph">指定されたトークンを削除し、それに関連付けられた認証情報を認証情報サービスから削除します。</block>
+  <block id="3ee4495deabdc53f0a0625224c1d7120" category="paragraph">未読の通知を削除し、指定した通知リソースを通知リストから削除します。</block>
+  <block id="aefedf98a51ae26a685774a18424aec8" category="paragraph">AppMirrorリソースを削除し、ソースクラスタと宛先クラスタの両方で関連リソースの削除を開始します。このエンドポイントを使用して、AppMirror関係に関連付けられたリソースをクリーンアップします。</block>
+  <block id="74846561b1e59662c616b781a2ad2c0e" category="paragraph">アプリケーションのバックアップを削除します。このエンドポイントを使用して、不要なバックアップや古いバックアップを削除することでストレージ容量を管理します。</block>
+  <block id="f0eaa30b33656401478b8957412e1e79" category="paragraph">アプリのAppMirrorリソースを削除し、現在の関係状態に基づいて、ソースクラスタとデスティネーションクラスタの両方で関連リソースの削除を開始します。</block>
+  <block id="274fa4c74ad079a3a90a0d2447a300ce" category="paragraph">アプリケーションのスナップショットを削除し、指定されたスナップショットデータをリソースから削除します。</block>
+  <block id="e3ef0fa78560b090f3e291bbf6595619" category="paragraph">実行フックのオーバーライドリソースを削除します。これを使用して、アプリケーション内の実行フックのカスタム設定を削除します。</block>
+  <block id="d3129062337f2ede14b8b7be9ba50117" category="paragraph">アプリの実行フックを削除し、以降のアクションでアプリが実行されないようにします。</block>
+  <block id="ce1dbde5764523842b21be9613a0403f" category="paragraph">スケジュールを削除し、指定されたSchedule APIリソースをAstraから削除します。</block>
+  <block id="26cf2a1515da2d8f83651afd74e0f4f2" category="paragraph">Astraからアプリを削除し、指定されたApp APIリソースを削除して管理から切り離します。</block>
+  <block id="7b7c2bbe27daaafa78a4d8f1f820d130" category="paragraph">アプリケーションのバックアップを削除します。指定されたバックアップリソースとその関連データが削除されます。これを使用して、ストレージ容量を管理したり、アプリケーションリソースから古いバックアップを削除したりできます。</block>
+  <block id="5170613550ad72353fbd4a06ec6d9ed1" category="paragraph">バケットを削除します。この操作を使用して、ストレージリソースから不要なバケットまたは古くなったバケットを削除します。</block>
+  <block id="139dd162a5411a206693f183fefd2bd3" category="paragraph">要求されたクラウドインスタンスと、それに関連付けられている管理対象外のクラスターおよびボリュームをすべて削除します。この操作を使用して、不要になったクラウドリソースを削除します。</block>
+  <block id="0c0176a59fc5b8a3a63aff905c298dfc" category="paragraph">クラウドからクラスターを削除します。この操作を使用して、指定された Cluster API リソースを削除し、内部データ構造をクリーンアップします。</block>
+  <block id="53eb65d51d4482d253c3b0e46ab4b640" category="paragraph">指定されたクラスターを削除し、関連付けられているAPIリソースを削除し、内部データ構造をクリーンアップします。</block>
+  <block id="4c1ba77d6d20c12c1c1886f0ff6fd5b1" category="paragraph">管理対象クラスターを削除します。この操作を使用して、指定されたAPIリソースを削除し、関連する内部データ構造をクリーンアップします。</block>
+  <block id="bbceaa3fc74f3c4007832931bdf1eb76" category="paragraph">ストレージバックエンドを削除します。このアクションを使用して、関連するすべてのbackendConfigおよびbackendNodeリソースをシステムから削除します。</block>
+  <block id="85bb930df7c4a2118c464d337a64949c" category="paragraph">管理対象クラスタのアプリケーションを削除し、管理対象からアプリケーションと、スケジュールやバックアップなどの関連リソースを削除します。</block>
+  <block id="82325f3a21c9944596e03cd1c77f580d" category="paragraph">有効なライセンスとサブスクリプションによって、アカウントで利用できる機能や容量を確認してください。</block>
+  <block id="594638942f62c375e0c4ca619d598707" category="paragraph">システムアクティビティを追跡するには、Astra Controlで発生するイベントを確認します。</block>
+  <block id="eb415a4d43b59ac04d56833902c6d7ce" category="paragraph">アプリケーションの実行フックを作成および管理します。各フックには追加の設定情報が含まれており、フックソースを参照します。</block>
+  <block id="4218cade04cbc176e4dec0af73db89b9" category="paragraph">特定のアプリケーションのプリロードされたNetApp実行フックを無効にします。これらのエンドポイントを使用する前に、ページに記載されている非推奨情報を確認してください。</block>
+  <block id="ec767ab8b556994bbe0fcab5d0cc8847" category="paragraph">機能フラグを読み取って、どのAstra Control機能が有効または無効になっているかを確認します。</block>
+  <block id="09fcc0977043533fcff171dbcde44613" category="paragraph">アカウントを取得し、保存されているアカウントリソースの詳細をレスポンスとして返します。管理や確認のためにアカウント情報にアクセスするには、こちらを使用してください。</block>
+  <block id="447d96942e4ce00e00cc6a8aab62b237" category="paragraph">ASUPリソースを取得し、監視および診断目的で保存されたAutoSupportデータへのアクセスを可能にします。</block>
+  <block id="7f8fa8decce735ee009f3bc2f1c08601" category="paragraph">ASUPリソースのリストを取得し、コレクション内の各リソースの詳細情報を提供します。個々のフィールドを指定することで、出力内容をニーズに合わせてカスタマイズできます。</block>
+  <block id="35a6efee813e1dd9fb008c5e8bd0005a" category="paragraph">レスポンスで、保存されている証明書APIリソースの詳細を提供するために、証明書を取得します。</block>
+  <block id="c04843987d49abac5bf8915fcdbedd13" category="paragraph">コレクション内のすべての証明書を取得し、証明書リソースの包括的なリストを提供します。これを使用して、証明書の設定を効率的に表示および管理できます。</block>
+  <block id="37275ced0b32d35a8a9fc947999fdb6f" category="paragraph">認証情報を取得し、保存されている認証情報をレスポンスボディに含めて提供します。</block>
+  <block id="8c4ca3540d01bd7ea849c726f9249eef" category="paragraph">すべての認証情報の一覧を取得します。これを使用して、コレクション内で利用可能な認証情報を表示します。</block>
+  <block id="e35ad40ce2255102c4137e62e140cee6" category="paragraph">エンタイトルメントを取得し、保存されているエンタイトルメントAPIリソースをJSONレスポンスボディに提供します。</block>
+  <block id="41086a5204b7232793f63f53f9baff61" category="paragraph">コレクション内の該当するすべてのリソースに関する情報を含む、権限の一覧を取得します。これを使用して、リクエスト条件に基づいて特定のリソースの詳細情報にアクセスします。</block>
+  <block id="344267c3b1e6901c783c8d00a6ea61df" category="paragraph">イベントを取得し、分析または監視目的で保存されたイベントリソースを返します。</block>
+  <block id="c034d1c69755c17a4261355a3638fc5a" category="paragraph">イベントの一覧を取得します。これを使用すると、指定した条件に基づいてコレクション内のすべての一致するリソースを表示できます。</block>
+  <block id="911b8776a8cd4d125644bfbdfe02c021" category="paragraph">実行フックを取得し、保存されているリソースの詳細、および現在の基準に基づいて一致するコンテナとイメージの情報を提供します。</block>
+  <block id="20ef6a37f469e0a849da0ba410809bb1" category="paragraph">指定された条件に一致するすべての実行フックを取得し、リソースの JSON 配列を提供します。これを使用すると、コレクション内の各フックに関する詳細情報を表示できます。</block>
+  <block id="9af982557ed2eb76478c446b81456c92" category="paragraph">機能を取得し、検証または統合の目的で保存されているFeature APIリソースを提供します。</block>
+  <block id="86fff7aac37293a466b1b062b6019c53" category="paragraph">Astra APIで利用可能なすべての機能を取得し、コレクション内のリソースの包括的なリストを提供します。これを使用すると、リクエスト条件に基づいて各機能の特定のフィールドを表示できます。</block>
+  <block id="6aaf68e27346373ea36f5b7306391e52" category="paragraph">グループを取得し、保存されているグループリソースの詳細をレビューまたは統合目的で提供します。</block>
+  <block id="df3ba56a2f228f15aae70cd9f287b128" category="paragraph">グループのロールバインディングを取得し、指定されたグループIDに関連付けられたロールバインディングの詳細を提供します。これを使用して、Astra API内でグループに設定されている権限と関連付けを調べます。</block>
+  <block id="92d0706125b0ccb3e861ab344a1c9ab4" category="paragraph">グループのロールバインディングを取得し、コレクション内の一致するリソースのリストを提供します。これを使用して、グループに関連付けられた特定のロールバインディングに関する詳細情報にアクセスします。</block>
+  <block id="7067c5c4dc8b33261803cded0575dda9" category="paragraph">グループのユーザーを取得し、保存されているユーザーAPIリソースの詳細へのアクセスを提供します。</block>
+  <block id="b854542a671dbdc0ae2494a254d6dea8" category="paragraph">グループ内のユーザーのロールバインディングを取得し、ユーザーまたはグループのコンテキストに固有のロールの関連付けを提供します。これを使用して、アカウント内のユーザーまたはグループに割り当てられているロールを確認します。</block>
+  <block id="cc0f26e37380ea26342da02fd63591a9" category="paragraph">グループ内のユーザーのロールバインディングを取得します。これを使用して、ユーザーに割り当てられたロールを表示し、アクセス権限を効果的に管理します。</block>
+  <block id="9a2cb1c6a29abdb81e7837f22ba573e4" category="paragraph">グループ内のユーザーのトークンを取得し、保存されているAPIトークンリソースを返します。これを使用して認証を行い、グループ固有のリソースに安全にアクセスできます。</block>
+  <block id="fbcce173349c92fe42afe0e852f3e6d2" category="paragraph">グループ内のユーザーに関連付けられたトークンを取得し、認証および認可のためのアクセス詳細を提供します。</block>
+  <block id="40c20d2b6745ddd38a8d6562a1a7da85" category="paragraph">グループ内のユーザーの未読通知を取得し、まだ確認されていない通知の詳細を提供します。</block>
+  <block id="bbfc34bdbcadd885604b8b1411fb7c35" category="paragraph">グループ内のユーザーの未読通知を取得し、一致するリソースのJSON配列を提供します。</block>
+  <block id="b8685521b000aad5f211f966772bf571" category="paragraph">グループのユーザーを取得し、コレクション内の一致するすべてのリソースのJSON配列を提供します。</block>
+  <block id="65ed6ed8c41b4ccbb14818194d0b8fe8" category="paragraph">Astra API内のすべてのグループを取得し、コレクション内の一致するリソースのJSON配列を提供します。</block>
+  <block id="40c776400ab1dbed8725c9464a94d94a" category="paragraph">フックソースを取得し、レスポンスとして保存されているフックソースAPIリソースを返します。これを使用して、統合タスク用の特定のフックソース構成にアクセスします。</block>
+  <block id="c1259c38c36ee67bf4e69446e8ecf352" category="paragraph">コレクション内のすべてのフックソースを取得します。これを使用して、リクエストで指定された各リソースで使用可能なフィールドを表示します。</block>
+  <block id="1940d75ee8662971a58f99a41140c5e5" category="paragraph">LDAPグループを取得し、保存されているLDAPリソース構成の詳細を提供します。</block>
+  <block id="cf46fe52fa4e26fde5923c68a3892906" category="paragraph">LDAPグループのリストを取得し、管理および統合目的でグループ構成へのアクセスを提供します。</block>
+  <block id="dce1fedb2ee5b5b59d910525cb27d058" category="paragraph">LDAPユーザーを取得し、ユーザー管理および認証タスクに必要な保存済みのリソース構成を提供します。</block>
+  <block id="72a8de2adbbfbb7722b270ae514e6483" category="paragraph">LDAPユーザーのリストを取得し、LDAPディレクトリ内のすべてのユーザーの包括的なビューを提供します。</block>
+  <block id="5d09241e46531a6f9531bef889d4b0e3" category="paragraph">保存されているライセンスAPIリソースの詳細を提供し、ライセンスを取得します。これを使用して、現在のライセンス構成を確認し、ライセンス要件への準拠を確保してください。</block>
+  <block id="eb40f655f4b6424a298cbcc8532fe6ed" category="paragraph">コレクション内のすべてのライセンスを取得し、一致するリソースのJSON配列を返します。リクエスト内の個々のフィールドを指定することで、各ライセンスに対して返される情報をカスタマイズできます。</block>
+  <block id="6e8f1eebf3d4290aa015118b46716358" category="paragraph">通知を取得し、保存されている通知リソースをレスポンスボディに含めて提供します。これを使用して、システム内の特定の通知に関する詳細情報にアクセスできます。</block>
+  <block id="ac27283d0644837f1b2195399df5bdf5" category="paragraph">通知の一覧を取得します。これを使用して、リソースに関するすべての関連アラートと更新情報を確認してください。</block>
+  <block id="d5e623875cf13c243ffcb8af5da2ce1a" category="paragraph">保存されているパッケージを取得し、そのパッケージのAPIリソースの詳細へのアクセスを提供します。</block>
+  <block id="eace94fe1e708c617fd08bb4077ca2e6" category="paragraph">コレクション内のすべてのパッケージリソースを取得し、一致する各リソースの詳細情報を提供します。これを使用して、返されたデータの中から特定の関心のあるフィールドを表示できます。</block>
+  <block id="fe71956a17b2a90c43fec7e680444159" category="paragraph">ロールバインディングを取得し、保存されているロールバインディングAPIリソースの詳細へのアクセスを提供します。このエンドポイントを使用して、特定のユーザーまたはグループIDに関連付けられたロールバインディングを表示します。</block>
+  <block id="e0ed3205f61379ef45e90a33b8e6a54d" category="paragraph">ロールバインディングのリストを取得し、コレクション内の一致するリソースを提供します。これを使用すると、各リソースの指定されたフィールドを、要求された順序で表示できます。</block>
+  <block id="0b5ba6a2ab41b7e92f76f63d0c24ccc6" category="paragraph">設定を取得し、保存されている構成の詳細を参照または変更できるようにします。</block>
+  <block id="e4cb5a7db5f19c2e380fbac164e265ef" category="paragraph">Astra API内の設定のリストを取得し、コレクション内の各リソースの現在の構成を提供します。</block>
+  <block id="9c823fbc5ad2d57150b68fda89baa814" category="paragraph">サブスクリプションを取得し、監視または管理目的で保存されているサブスクリプションAPIリソースを返します。</block>
+  <block id="00038922d136232573904fd880dd8f50" category="paragraph">サブスクリプションのリストを取得し、コレクション内の各サブスクリプションの詳細を提供します。これを使用して、サブスクリプションを効率的に確認および管理します。</block>
+  <block id="d00d4eaccc22ec937ab5344521c9831a" category="paragraph">タスクを取得し、監視および管理目的で保存されているTask APIリソースに関する詳細情報を提供します。</block>
+  <block id="19619ae1cfb12eacdcef949a3766fe7a" category="paragraph">コレクション内のすべてのタスクを取得し、利用可能なタスクリソースの全体像を提供します。これを使用して、ワークフロー内のタスクを効率的に特定し、管理します。</block>
+  <block id="7d7276d31151bf6fa51c1f20ae389648" category="paragraph">アップグレードリソースを取得し、保存されているアップグレード構成をレビューまたは管理目的で提供します。</block>
+  <block id="35f847cbeef77c62d7e11e25a545fc7b" category="paragraph">アップグレードの一覧を取得し、コレクション内の一致するすべてのリソースの詳細を提供します。これを使用すると、指定された順序で各リソースの特定のフィールドにアクセスできます。</block>
+  <block id="e8c111ada0195464c2187fd52715a0de" category="paragraph">ユーザーを取得し、保存されているユーザーAPIリソースをJSONレスポンスボディに返します。管理および統合タスクのために、ユーザーの詳細情報にアクセスするには、これを使用してください。</block>
+  <block id="accb3e2d46120054034b5766b0940e91" category="paragraph">ユーザーのグループを取得し、保存されているグループ情報を構造化された形式で提供します。</block>
+  <block id="5a715626af19b6343ba3a9d1871f7815" category="paragraph">ユーザーに関連付けられたグループのロールバインディングを取得し、指定されたグループにリンクされたロールバインディング構成の詳細を提供します。</block>
+  <block id="89ba1b6b731ac5de5a282530eefbcb49" category="paragraph">ユーザーに関連付けられたグループのロールバインディングを取得し、そのグループに割り当てられているアクセス権限を理解するのに役立ちます。</block>
+  <block id="a465512e162be1a91fb1807f7055e944" category="paragraph">ユーザーに関連付けられているグループの一覧を取得し、管理や分析のために詳細なグループ情報へのアクセスを提供します。</block>
+  <block id="60d7e32f640b68d018b1bd5dc0880782" category="paragraph">ユーザーのロールバインディングを取得し、ユーザーのロールに関連付けられた特定の権限を提供します。これを使用して、アカウントまたはグループ内のリソースへのアクセスを管理するロールの割り当てを確認します。</block>
+  <block id="1f4ed9ee6075f5a61d844e628d2dfa91" category="paragraph">ユーザーのロールバインディングを取得し、ユーザー権限を効果的に管理するために必要な情報を提供します。</block>
+  <block id="b90218ecac7d75e881d5e1a1a70742f9" category="paragraph">トークンを取得し、レスポンスで保存されているToken APIリソースを提供します。</block>
+  <block id="6aefda16cb063fa9aabaf43044229813" category="paragraph">ユーザーのトークン一覧を取得し、そのユーザーのアカウントに関連付けられている利用可能なトークンを提供します。</block>
+  <block id="a9e01d11aa3c19f577dd08272584352c" category="paragraph">未読の通知を取得し、保存されている通知の詳細を表示して、確認または対応できるようにします。</block>
+  <block id="df12dcc1cb9ee8153ab6aa0d5255e84c" category="paragraph">ユーザーの未読通知を取得し、注意が必要な最新のアラートと更新情報を提供します。</block>
+  <block id="e10b7d3bb4e47841364b976c48a2fec2" category="paragraph">システム内のすべてのユーザーのリストを取得し、ユーザー情報と設定へのアクセスを提供します。ユーザーアカウントを効率的に確認または管理するには、これを使用してください。</block>
+  <block id="234540a7c1ed759de7ee45176407dd39" category="paragraph">AppMirrorリソースを取得して、アプリケーションミラーリングアクティビティ用に保存された構成の詳細を提供します。</block>
+  <block id="7d843067d49b5d73356a9cb4bfca68a1" category="paragraph">アプリケーションで使用可能なリソース構成を提供する、AppMirrorリソースのリストを取得します。</block>
+  <block id="797c64c99efa0b188ae8c5346b423da5" category="paragraph">アプリケーションのアセットを取得し、保存されているアセットの詳細を後続の処理や分析のために提供します。</block>
+  <block id="2f79051605031945e896a6894b69b9f3" category="paragraph">アプリケーションのアセットを取得し、コレクション内で利用可能なリソースに関する情報を提供します。必要に応じて、このエンドポイントを使用して各アセットの特定のフィールドを表示できます。</block>
+  <block id="253ec54ff5184b0e262ff25882ab51c8" category="paragraph">アプリケーションのバックアップを取得し、保存されているバックアップリソース情報をJSONレスポンスボディに提供します。</block>
+  <block id="47d6e889b20dcb552918871d2a20b1e0" category="paragraph">アプリケーションのバックアップからアプリケーション資産を取得し、保存されているリソースをJSONレスポンスボディに提供します。このエンドポイントを使用して、復旧または分析のために特定の資産にアクセスします。</block>
+  <block id="772b24169bc798829d23fc84acbd94e9" category="paragraph">アプリケーションのバックアップからアプリケーション資産を取得します。これを使用して、バックアップに含まれるリソースの詳細にアクセスします。</block>
+  <block id="6aa110e780bdcbabd8225d74f4b1e061" category="paragraph">アプリケーションのバックアップを取得します。これを使用して、アプリケーションに関連付けられているバックアップ構成とステータスを確認します。</block>
+  <block id="14b053ca14824fdd13b87cd198db8450" category="paragraph">アプリケーションのAppMirrorリソースを取得し、アプリケーションのミラーリング用に保存された構成の詳細へのアクセスを提供します。</block>
+  <block id="6bcd82264e27dc6aac494e354b0e7510" category="paragraph">アプリのAppMirrorリソースを取得し、コレクション内の条件に一致するすべてのリソースのJSON配列を返します。これを使用して、アプリケーション環境内の各リソースの特定のフィールドにアクセスします。</block>
+  <block id="b94b7e57b4df36de8810f4705f7ccb45" category="paragraph">アプリケーションのスナップショットを取得し、保存されたスナップショットデータをレビューまたは分析用に提供します。</block>
+  <block id="5004a3d78c4cc45ceb9b78f36b52e995" category="paragraph">アプリケーションスナップショットのアプリケーションアセットを取得し、保存されているアセットの詳細をJSONレスポンスボディに提供します。</block>
+  <block id="8fcca50a54ef18a790e7518f7cfeb1a1" category="paragraph">アプリケーションのスナップショットに対応するアプリケーション資産を取得し、スナップショットに関連付けられたリソースの詳細なビューを提供します。</block>
+  <block id="475fcd217a3ca8c6bdc886fa80388c3a" category="paragraph">アプリケーションのスナップショットを取得し、アプリケーションで使用可能なスナップショットの包括的なビューを提供します。</block>
+  <block id="dd4869971587082a81a81bf636cd4e1a" category="paragraph">実行フックオーバーライドリソースを取得し、統合および自動化ワークフロー用に保存されている構成の詳細情報を提供します。</block>
+  <block id="d73f7c3c168427a3116000b5f687c03b" category="paragraph">アプリの実行フックオーバーライドリソースを取得し、特定の操作中にアプリケーションの動作を変更するカスタム構成へのアクセスを提供します。</block>
+  <block id="a05d3d522f5f0f9b05e39818c34e0edf" category="paragraph">アプリの実行フックを取得します。これを使用して、現在の基準に基づいて、保存されている実行フックリソースとその関連コンテナおよびイメージを検査します。</block>
+  <block id="f682a4a05dcd24e8bc407f656f78d80b" category="paragraph">アプリの実行フックを取得し、コレクション内の一致するすべてのリソースの JSON 配列を提供します。必要に応じて、これを使用して、一致する各リソースの特定のフィールドを表示します。</block>
+  <block id="f19b71252e530ed1d82da941acc298e0" category="paragraph">保存されているスケジュールを取得します。これを使用して、スケジュール設定の詳細にアクセスして確認できます。</block>
+  <block id="7bf520a77c86f0511bf2668e048dd188" category="paragraph">アプリケーションのスケジュール一覧を取得します。これを使用して、アプリケーションに関連付けられているスケジュール設定を表示します。</block>
+  <block id="f73487fe1de5688fbc3aac9ebc6cf4fa" category="paragraph">アプリケーションのボリュームを取得し、保存されているボリュームリソースに関する詳細情報を提供します。</block>
+  <block id="e182a08d1c74df7c7ecaf5c8f3d327d2" category="paragraph">指定されたアプリのボリューム一覧を取得します。これを使用すると、アプリに関連付けられている各ボリュームの詳細な構成とプロパティを表示できます。</block>
+  <block id="1485b27862239c0db1ad1d4711a596f4" category="paragraph">Astra APIからアプリを取得し、さらなる分析や管理のために保存されたアプリケーションの詳細を提供します。</block>
+  <block id="6130686df7082b92fdf99a62cfd08b8c" category="paragraph">すべてのアプリケーションのリストを取得し、コレクション内の各一致リソースの詳細情報を提供します。これを使用して、関心のあるアプリケーションの特定のフィールドにアクセスしてください。</block>
+  <block id="32cf3744f85934b2570422c1ba381007" category="paragraph">アカウントに関するすべての指標を取得し、パフォーマンスと利用状況に関する洞察を提供します。</block>
+  <block id="8489b13dd24e9e0f65981df792d830ce" category="paragraph">アプリケーションのバックアップを取得し、保存されたバックアップリソースへのアクセスを提供することで、詳細な検査や復旧を可能にします。</block>
+  <block id="6c1793e89a2d3c6ec91d7fb2839a563e" category="paragraph">アプリケーションのバックアップからアプリケーション資産を取得します。これを使用して、復元または分析目的で保存されている資産構成にアクセスします。</block>
+  <block id="b71bd5828a63f414a686889dcd68cea9" category="paragraph">アプリケーションバックアップ用のアプリケーションアセットを取得し、コレクション内の一致するすべてのリソースのJSON配列を提供します。これを使用して、各リソースの特定のフィールドを指定された順序で表示します。</block>
+  <block id="81c8d070dd9817e9fbfe35f1f7615ed7" category="paragraph">すべてのアプリケーションバックアップを取得し、コレクション内で利用可能なバックアップリソースの包括的なリストを提供します。リクエストで個々のフィールドを指定することで、返される情報をカスタマイズできます。</block>
+  <block id="d26688f5dc36664f724291631e0a8af5" category="paragraph">バケットを取得し、保存されているバケット構成の詳細をレスポンスで提供します。</block>
+  <block id="82b476a70847bc6ee7d5c2833c98960d" category="paragraph">バケットのリストを取得し、コレクション内の一致するすべてのリソースの JSON 配列を提供します。これを使用して、利用可能なバケットとその指定フィールドを確認します。</block>
+  <block id="d6726c4ec02755d98616317ad8b0d106" category="paragraph">クラウド リソースを取得し、クラウド管理タスク用に保存されている構成詳細を提供します。</block>
+  <block id="e93a5a4e270e3dea5a1b80dc75faf7ab" category="paragraph">クラウドのクラスターを取得し、保存されているCluster APIリソースデータへのアクセスを提供します。</block>
+  <block id="f2d53ffbe49fd18d10b3d2ebc1a8defd" category="paragraph">クラウドのクラスタノードを取得し、クラウド リソース管理のために保存されているノード構成へのアクセスを提供します。</block>
+  <block id="abf572fb5ff8d37f2c3a15d4fa89e18f" category="paragraph">クラウドのクラスタノードを取得し、指定されたクラウド環境内で利用可能なノードの詳細情報を提供します。</block>
+  <block id="4eec5a11fbd68cb26a62d1bdfe5bb4a8" category="paragraph">クラウドのネームスペースを取得し、クラウド運用向けに保存されたネームスペースAPIリソースを提供します。</block>
+  <block id="09291fcf503f2c62768aa4c6c9499df2" category="paragraph">クラウドのネームスペースを取得し、コレクション内で利用可能な一致するすべてのリソースのリストを提供します。</block>
+  <block id="3f8ae2f69c26be5a367a062659cbbb79" category="paragraph">クラウドのストレージクラスを取得し、ストレージリソースで使用可能なクラス構成を提供します。</block>
+  <block id="25f0a211882ccbd839e00af6907b343c" category="paragraph">クラウドのストレージクラスのリストを取得し、クラウド ストレージ リソースで使用可能な構成の詳細を提供します。</block>
+  <block id="c37dbad3a062492868759fec722668de" category="paragraph">クラウドのクラスタ一覧を取得します。これを使用して、指定したクラウド環境で利用可能なクラスタを表示します。</block>
+  <block id="94e1b5d151d26be63c7f2903d651fec1" category="paragraph">クラウド リソースの一覧を取得します。これを使用して、環境内で利用可能なクラウドを表示します。</block>
+  <block id="b723bfe2a6875b25664ebd4e9dcffb7d" category="paragraph">保存されているクラスタリソースを取得し、管理および運用タスクに必要なクラスタの詳細情報を提供します。</block>
+  <block id="7642b4ce9c23ebce68ec6ea1e457a624" category="paragraph">クラスターのクラスターノードを取得し、指定されたクラスター内のノードの構成とステータスに関する詳細を提供します。</block>
+  <block id="1d3b61d0cee2af22fd2b8b722aea95c8" category="paragraph">クラスターのクラスターノードを取得します。これを使用すると、指定されたクラスター内のすべてのノードとその詳細を表示できます。</block>
+  <block id="da03be15b84c3c93b467166b59bb0503" category="paragraph">クラスターのネームスペースを取得し、保存されているネームスペースAPIリソースの詳細を提供します。</block>
+  <block id="2cfde5d36a21eb927c11cfad1d9d55e2" category="paragraph">クラスターのネームスペースを取得し、コレクション内の一致するすべてのリソースのリストを提供します。必要に応じてこれを使用して、各リソースの特定のフィールドを表示します。</block>
+  <block id="c8b6aef5232c4c1ada524a8dda8c84d5" category="paragraph">クラスタのストレージクラスを取得し、クラスタ内のストレージリソースを管理するための保存済み構成の詳細を提供します。</block>
+  <block id="46107727faf7ae683a9df5765049de79" category="paragraph">クラスターのストレージクラスを取得します。これを使用すると、指定されたクラスター内で利用可能なストレージ構成に関する詳細情報にアクセスできます。</block>
+  <block id="bfda47e5e0383fec40868fad03e7a712" category="paragraph">クラスターのリストを取得し、コレクション内の各クラスターに関する詳細情報を提供します。これを使用して、クラスターの現在の構成と状態を評価します。</block>
+  <block id="9a3433451f80379229261b5c6c763fa7" category="paragraph">マネージド クラスターを取得し、マネージド クラスター API リソースに格納されている詳細情報を提供します。この情報を使用して、クラスターの現在の構成と状態を把握してください。</block>
+  <block id="11786d995bbfb4a54d0ecf96ed1ca6cf" category="paragraph">K8s APIリソースを取得し、JSONレスポンスボディに特定のリソースを提供することで、詳細な調査や統合を可能にします。</block>
+  <block id="7fc83b9cc436a14bdd176b58b42c74d8" category="paragraph">管理対象クラスターのKubernetes APIリソースのリストを取得します。これを使用して、指定されたクラスター内で利用可能なリソースを表示します。</block>
+  <block id="c9d1103ecaba82f65ba4c0e60c86b315" category="paragraph">管理対象クラスタのアプリケーションアセットを取得し、管理タスクに必要な保存済みリソースの詳細へのアクセスを提供します。</block>
+  <block id="08e01ce657a8816b4922f77eef710b97" category="paragraph">管理対象クラスタのアプリケーション資産を取得し、クラスタのアプリケーションに関連するリソースの一覧を提供します。これを使用して、管理対象クラスタ内の特定のアプリケーションリソースを識別し、アクセスします。</block>
+  <block id="684293b470f5272c5a619541ae99b187" category="paragraph">管理対象クラスタのクラスタノードを取得し、クラスタ内におけるノードの構成とステータスに関する詳細情報を提供します。</block>
+  <block id="1b0b7bb181dc042b5910033e24538729" category="paragraph">管理対象クラスタのクラスタノードを取得し、クラスタ内のノードの詳細なビューを提供します。</block>
+  <block id="c0927160dda03e1225ffeadb410c08e9" category="paragraph">管理対象クラスターのネームスペースを取得し、クラスター内のネームスペースリソースの保存された構成の詳細を提供します。</block>
+  <block id="145346ce0ef58d8d0c46a84105dabbe2" category="paragraph">管理対象クラスタのネームスペースを取得します。これを使用して、クラスタに関連付けられているネームスペースを表示し、効果的に管理します。</block>
+  <block id="849203b8a8bb1f58fa75dedb8e8460ea" category="paragraph">管理対象クラスタのストレージクラスを取得し、リソース管理用に保存された構成の詳細を提供します。</block>
+  <block id="c86c6dc52dfce0ceb711d722b81a8d44" category="paragraph">管理対象クラスタのストレージクラスを取得し、クラスタ内のストレージリソースで使用可能な構成を提供します。</block>
+  <block id="6d1c20943bfc933db8864b0dd36c7141" category="paragraph">管理対象クラスタのボリュームを取得し、保存されているボリューム情報へのアクセスを提供することで、さらなる管理や分析を可能にします。</block>
+  <block id="706188b8151901c1da1c779e9170264e" category="paragraph">管理対象クラスタのボリューム一覧を取得します。これを使用して、クラスタ内で利用可能なストレージリソースを表示します。</block>
+  <block id="8aa5a145ffe5de042dfd9eda3b6f2931" category="paragraph">Astra APIのすべての管理対象クラスタを取得し、指定された条件に一致するクラスタのリストを提供します。これを使用して、環境内のクラスタを表示および管理します。</block>
+  <block id="b9b9fb888315bd44962102da44c9cbd2" category="paragraph">ネームスペースを取得し、アプリケーションデータを管理するために保存されているネームスペースAPIリソースへのアクセスを提供します。</block>
+  <block id="c1fa52550c9c303f8444caf7d0bd6d14" category="paragraph">コレクション内のすべてのネームスペースのリストを取得します。これを使用して、利用可能なネームスペースとその構成を表示します。</block>
+  <block id="279aa42d010ea177dedf5931ea600b68" category="paragraph">ストレージバックエンドを取得し、バックエンドリソースの保存済み構成詳細を提供します。</block>
+  <block id="a1e4902236e4f912439c3f344092f037" category="paragraph">ストレージバックエンドのボリュームを取得し、保存されたボリュームAPIリソースを提供することで、さらなる検査や管理を可能にします。</block>
+  <block id="0a802d395e522466e2e70a5241e8ff29" category="paragraph">ストレージバックエンドのボリューム一覧を取得し、管理や分析のためにボリューム構成へのアクセスを提供します。</block>
+  <block id="b965976d9b09025f82ff492a56bd7e23" category="paragraph">ストレージバックエンドのリストを取得します。これを使用して、管理および構成目的で使用可能なすべてのストレージリソースを表示します。</block>
+  <block id="ce80209706677aaf2a4e45dd253b2ee7" category="paragraph">ボリュームを取得し、指定されたボリュームリソースの保存された構成詳細を提供します。これを使用して、ストレージ環境内のボリュームの現在の状態を確認してください。</block>
+  <block id="c14373c97c1f30ba28a7b08f8eb8f57e" category="paragraph">コレクションに含まれる各ボリュームの詳細情報を提供する、ボリュームの一覧を取得します。これを使用すると、一致するすべてのボリュームにわたって、目的の特定のフィールドを表示できます。</block>
+  <block id="9ad5e8e4900e3e2f635a3a686aa93710" category="paragraph">管理対象クラスターのアプリを取得し、保存されているApp APIリソースの詳細をJSONレスポンスボディで提供します。</block>
+  <block id="c310098c238573f71ab694081cb56945" category="paragraph">管理対象クラスタのアプリケーション一覧を取得します。これを使用して、クラスタ環境内で現在管理されているアプリケーションを表示します。</block>
+  <block id="2ca0d7ff12e6d2e001d7c9bdc3cac82e" category="paragraph">Astra APIのすべてのアカウントを取得し、コレクション内の該当するリソースのJSON配列を返します。これを使用して、指定したフィールドに基づいてアカウントの詳細を表示します。</block>
+  <block id="d1f539ad1e1bcff99839e3c7f7f5cb09" category="paragraph">Astra Controlで、グループに属するユーザーを含めてグループを管理します。</block>
+  <block id="175a88f639190e1a0965b33e765fdf68" category="paragraph">複数のフックが1つのソースを共有できるように、フックソースと実行フックを別々に管理します。共有ソースを更新すると、そのソースが使用されているすべての場所にその変更が適用されます。</block>
+  <block id="751f57226032c4320ca090547c033a21" category="paragraph">クラスター上の Kubernetes API リソースを参照して、Astra Control がサポートしているものを確認します。これらのエンドポイントは読み取り専用です。</block>
+  <block id="5541f9a79c2d098ac32bc1d5e3385540" category="paragraph">設定済みのLightweight Directory Access Protocol（LDAP）サーバー上のグループを表示します。これらのエンドポイントは読み取り専用です。</block>
+  <block id="fc07aeed833e63e692c103acd2eb44d0" category="paragraph">設定済みのLightweight Directory Access Protocol（LDAP）サーバー上のユーザーを表示します。これらのエンドポイントは読み取り専用です。</block>
+  <block id="91e677bbf80dfedda4c87aaccf87fc55" category="paragraph">Astra Controlアカウントにロードされたライセンスを管理します。</block>
+  <block id="1b154832fbc0741725110c91c4d7211d" category="paragraph">Astra Controlが管理するKubernetesクラスタを管理します。</block>
+  <block id="9ad9ef931c0e4d7206bd7dc8b9a7e121" category="paragraph">Astra Controlアカウントのメトリクスを取得して、そのアクティビティとリソース使用量を監視します。</block>
+  <block id="159b18de3ddee3bf73b0d73fb34b13e7" category="paragraph">クラスターに属するネームスペースを表示します。これらのエンドポイントは読み取り専用です。</block>
+  <block id="34a4ab485042d090e10acf97410d5efb" category="paragraph">各ユーザーの通知先にルーティングされるイベントを表示します。</block>
+  <block id="1478d84ea1ae9cbae4a43b97413bb694" category="paragraph">Astra Controlに登録されているインストール可能なソフトウェアパッケージを管理します。ご登録いただくパッケージによって、利用可能なアップグレードが決まります。</block>
+  <block id="4bb6cb6f366362572f5cbc4a30f37693" category="paragraph">自動サポートアップロードに必要な値を指定するためのASUPリソースを作成します。</block>
+  <block id="f8d2d916547b1e1a495bfa5c277b8a74" category="paragraph">証明書APIリソース用の新しい証明書を作成します。これを使用して、安全な通信に必要な値を指定します。</block>
+  <block id="7944c61415a868000923fc776b1ceaed" category="paragraph">Credential APIリソースに必要な値を指定して、新しい認証情報を作成します。これを使用して、アクセスおよび認証設定を効果的に管理します。</block>
+  <block id="3e2af56b8b9206ceb0ed2295481a57fa" category="paragraph">実行フックAPIリソースの値を指定して、新しい実行フックを作成します。これを使用して、ワークフローのカスタム自動化タスクを定義します。</block>
+  <block id="5e297fdc47380601ece7d97f9af7391f" category="paragraph">グループに対して新しいロールバインディングを作成し、Astra環境内でグループに特定の権限を割り当てます。このエンドポイントを使用して、グループベースの操作におけるアクセス制御を効果的に管理します。</block>
+  <block id="c892e470ebf4138e5aea6fba9b81eea4" category="paragraph">グループ内のユーザーに対して新しいロールバインディングを作成し、指定されたグループコンテキスト内でユーザーがアクションを実行するための権限を確立します。</block>
+  <block id="a361f5584c3b8835946160c75fcb2ba0" category="paragraph">グループ内のユーザーに対して新しいトークンを作成し、グループアクションの認証と承認に必要な値を指定します。</block>
+  <block id="d20680e03659d9c29c2b6a8b842619a2" category="paragraph">グループに新しいユーザーを作成します。これを使用して、グループのメンバーシップと権限を効果的に管理します。</block>
+  <block id="992ff24466a3597494ac94a8b3f01ac4" category="paragraph">グループAPIリソースに必要な値を定義し、新しいグループを作成します。これを使用して、環境内のリソースを効果的に整理および管理します。</block>
+  <block id="3a239f0f5634b44aba1cce5533465589" category="paragraph">新しいフックソースを作成し、作成プロセスを開始するためにHook Source APIリソースの値を指定します。自動化タスクや統合タスクのフックソースを確立する必要がある場合は、このエンドポイントを使用してください。</block>
+  <block id="e4cd1fa8dfb564f2e94207fa5783e77e" category="paragraph">License APIリソースに必要な値を指定して、新しいライセンスを作成します。このエンドポイントを使用して、環境内のライセンス管理ニーズを効果的に管理してください。</block>
+  <block id="c13203a4e9870eb0076db65967e839fe" category="paragraph">Package APIリソースの目的の値を指定して、Astra APIでパッケージを作成します。これを使用して、パッケージの属性と設定を定義します。</block>
+  <block id="b12d99f8ac40b6aafecc5516d738c819" category="paragraph">Role Bindingリソースの目的の値を指定して、Astra APIでロールバインディングを作成します。これを使用して、環境内のユーザーに対する権限とアクセス制御を定義します。</block>
+  <block id="188ea0204b43b2f9c1c82941fa321968" category="paragraph">Subscription APIリソースに必要な値を指定して、新しいサブスクリプションを作成します。これを使用して、お客様のニーズに合わせてカスタマイズされた設定でサブスクリプションを開始してください。</block>
+  <block id="0a9bca0a16dd4a09ec36485213cf4653" category="paragraph">ユーザーに関連付けられたグループに対して、ロールバインディングを作成します。これを使用して、Astra API環境内のグループに特定の権限を割り当てます。</block>
+  <block id="3320036f1d14586ebb44c057258ca03e" category="paragraph">ユーザー用に新しいグループを作成し、グループリソースに必要な値を指定します。このエンドポイントを使用して、ユーザーをグループ分けし、管理とアクセス制御を改善できます。</block>
+  <block id="648469fe15d4dc507664a3613ac234b1" category="paragraph">ユーザーに対するロールバインディングを作成し、ロールバインディングAPIリソースに必要な値を指定します。これを使用して、アプリケーション内のユーザーに特定のロールと権限を割り当てることができます。</block>
+  <block id="721a7cc7c8d010ddb61d6567adb1f4db" category="paragraph">ユーザー用の新しいトークンを作成し、Token APIリソースに必要な値を指定します。Astra APIサービスを安全に認証してアクセスする必要がある場合に、これを使用します。</block>
+  <block id="ef30a8d56ebb5bbe71d75ef2d285cbef" category="paragraph">ユーザーAPIリソースの目的の値を指定して、Astra APIに新しいユーザーを作成します。これを使用して、Astra環境内のユーザーアクセスと権限を管理します。</block>
+  <block id="616d7016f288ecebbbe6c9a60bfb68a5" category="paragraph">環境間でのアプリケーションのレプリケーションと同期に必要な値を指定して、新しいAppMirrorリソースを作成します。</block>
+  <block id="86123b4ad864a76964d143f861b48858" category="paragraph">アプリケーションのバックアップを作成し、バックアップリソースに必要な構成を指定します。これを使用すると、アプリケーションの現在の状態を保存して、将来の復旧や分析に利用できます。</block>
+  <block id="c1c24e8eb886bffb6deb96f2f67cc7c4" category="paragraph">アプリケーションのAppMirrorリソースを作成し、ミラーリングに必要な構成値を指定します。これを使用して、アプリケーションのニーズに合わせたミラーリング設定を確立します。</block>
+  <block id="cf7e632d16b4800f978f31300a7cd480" category="paragraph">アプリの新しいアプリケーションスナップショットを作成し、バックアップや復元のためにアプリの現在の状態をキャプチャします。</block>
+  <block id="6446421264f76f6cd0ea1ee843a902c0" category="paragraph">アプリの実行フックオーバーライドリソースを作成し、カスタマイズに必要な値を指定します。これを使用して、特定のアプリケーション要件に合わせて実行フックをカスタマイズできます。</block>
+  <block id="312bd5d6eaca7a4edc37487d6817ce59" category="paragraph">アプリに新しい実行フックを作成し、自動化されたプロセスや統合に必要な値を指定します。</block>
+  <block id="17ddafecf69640d8d868d29bfd65f005" category="paragraph">アプリの新しいスケジュールを作成し、タスクやイベントのスケジュールに必要なパラメータを指定します。これを使用して、定義されたスケジュールに従ってアプリの操作を自動化します。</block>
+  <block id="d59f9ce2491e277c51b434b3efff92d8" category="paragraph">Astra APIで新しいアプリを作成します。このエンドポイントを使用して、アプリケーションの構成ニーズをサポートするために、App APIリソースに必要な値を指定します。</block>
+  <block id="93f6eb5bbb150f03db470c3fac0db3dc" category="paragraph">Astra APIで新しいバケットを作成し、確立するBucket APIリソースに必要な値を指定します。</block>
+  <block id="ba456e62316a192c05796a0b82d71ef4" category="paragraph">クラウド環境用のクラスターを作成し、Cluster APIリソースに必要な構成を指定します。</block>
+  <block id="a66a58808d03a766f3b10ff0367c0b5d" category="paragraph">Astra APIで新しいクラウド リソースを作成します。これを使用して、クラウド構成に必要な値を指定します。</block>
+  <block id="afaef3d1db4dc896dacac0f2ba16e73d" category="paragraph">マネージド クラスター API リソースの希望値を指定して、マネージド クラスターを作成します。これを使用して、特定の要件に合わせてクラスターを構成およびデプロイします。</block>
+  <block id="aecc679a6e06a8443aa8e866520e7b2f" category="paragraph">リソースに必要な構成値を指定して、新しいストレージバックエンドを作成します。このエンドポイントを使用して、要件に合わせたストレージバックエンドを設定してください。</block>
+  <block id="a04727e82ca8d87e0e70fde4b587cdc1" category="paragraph">管理対象クラスタ用に新しいアプリを作成し、アプリAPIリソース構成に必要な値を指定します。このエンドポイントを使用して、管理対象クラスタ環境内でアプリケーションを起動します。</block>
+  <block id="ffc8331c131f79cd00894d0f0f64b76c" category="paragraph">アカウントAPIリソースに必要な値を指定して、新しいアカウントを作成します。これを使用して、サービスにアクセスするためのアカウントの詳細を設定および構成します。</block>
+  <block id="f70821e48837e9e613566c2bbe756ac5" category="paragraph">保存されているリソースを、指定された JSON リクエストボディに置き換えることでアカウントを変更します。ユーザーが変更できないキー値はそのまま保持されます。</block>
+  <block id="344cd33ceb3f9ffd2132c086bb04d769" category="paragraph">証明書を変更し、証明書の状態または内容の変更を反映するようにトラストストアを更新します。このエンドポイントを使用して、トラストストアが信頼できる証明書と信頼できない証明書を正確に表現していることを確認してください。</block>
+  <block id="7beb16866741eb42b75bea445c272581" category="paragraph">指定された JSON リクエストボディで保存されているリソースを置き換えることで認証情報を変更します。これにより、お客様が変更できないキー値は保持されます。</block>
+  <block id="1d11870d0058015a77cf11e3854756c5" category="paragraph">実行フックを変更して、保存されているリソースを新しい設定値で更新します。これを使用することで、実行フックを利用するアプリケーションの今後の動作が更新された設定を反映するようにできます。</block>
+  <block id="2299b4f4c324f31beafc1597b737ea3d" category="paragraph">グループに保存されているリソースを、指定された JSON リクエストボディに置き換えることでグループを変更します。これにより、ユーザーが変更できないキー値が確実に保持されます。</block>
+  <block id="3aabd2df5392b46af2d5f546811f60ee" category="paragraph">グループのロールバインディングを変更します。これを使用して、環境内の特定のユーザーグループに関連付けられたアクセス権限を更新します。</block>
+  <block id="d6e60d336cf51c0dc4637713f3417d1e" category="paragraph">指定されたJSONリクエストボディで保存されているリソース全体を置き換えることにより、グループ内のユーザーを変更します。このエンドポイントを使用すると、変更不可能なキー値を保持したままユーザーの詳細を更新できます。</block>
+  <block id="66cd18e1c7cff302457809145909930d" category="paragraph">グループ内のユーザーのロールバインディングを変更し、ユーザーが変更できないキー値を維持しながら、保存されているリソースを指定された詳細情報で更新します。</block>
+  <block id="9016f4d56decc23f115a5ac322db52c6" category="paragraph">グループ内のユーザーのトークンを変更し、指定されたJSONリクエストボディに基づいて保存されているリソースを更新します。</block>
+  <block id="ed17403ac1b309bf72f6f1c31ec476a6" category="paragraph">Astra APIのフックソースを変更します。このエンドポイントを使用すると、アプリケーションのスナップショットに関連付けられた実行フックのソースコードを更新できます。</block>
+  <block id="7aaa87d5b14b550b8d7c06641b8f5b4e" category="paragraph">保存されているデータを指定された情報に置き換え、特定のキー値を保持することで、ライセンスリソースを変更します。このエンドポイントを使用すると、ライセンス権限を効率的に更新できます。</block>
+  <block id="1dad9dba705d10b88be6513c84f7e108" category="paragraph">指定された JSON リクエスト本文に基づいて、ロールバインディングの設定を更新するように変更します。</block>
+  <block id="aec253370adea93827ebac9fcf011ff0" category="paragraph">保存されているリソースを、指定された JSON リクエストボディに置き換えることで設定を変更します。ユーザーが変更できないキー値は保持されます。このエンドポイントを使用すると、重要なシステムパラメータを維持しながら、構成設定を効率的に更新できます。</block>
+  <block id="74468d0b1dc3da392d72515523747e0c" category="paragraph">保存されているリソースを、指定された JSON リクエストボディに置き換えることでサブスクリプションを変更します。ただし、ユーザーが変更できないキー値は維持されます。特定の値を変更せずにサブスクリプションの詳細を更新する必要がある場合は、このエンドポイントを使用してください。</block>
+  <block id="dd267a4f898a33181d50e3e687b86bdc" category="paragraph">保存されているリソース全体を、指定されたJSONリクエストボディに置き換えることで、アップグレードを変更します。このエンドポイントを使用して、希望する状態に基づいてアップグレードをスケジュールまたは実行します。</block>
+  <block id="ddb408611429829cb2330e987e67ea72" category="paragraph">ユーザーが変更できないキー値を保持したまま、保存されているリソース全体を指定されたJSONリクエストボディに置き換えることで、ユーザーを変更します。このエンドポイントを使用すると、変更不可能な属性に影響を与えることなく、ユーザーの詳細情報を効率的に更新できます。</block>
+  <block id="0935eca605303c0772ba8c4c440c26e3" category="paragraph">指定されたJSONリクエストボディに基づいてグループ構成を更新し、ユーザーのグループを変更します。</block>
+  <block id="424a32f38a590565715f0e28a6710dd4" category="paragraph">ユーザーに関連付けられたグループのロールバインディングを変更します。これを使用して、特定のユーザーグループのアクセス権限を更新します。</block>
+  <block id="f28d6cee6b4d0d4d1506729e641baaa3" category="paragraph">ユーザーのロールバインディングを変更し、指定された仕様に従って保存されているリソースを更新します。Astra API環境内でユーザー権限を調整するには、このエンドポイントを使用します。</block>
+  <block id="dfea3f1e049ca9e0809d0f38a3cb94d4" category="paragraph">保存されているリソースを、指定された JSON リクエストボディに置き換えることでトークンを変更します。ただし、ユーザーが変更できないキー値は維持されます。</block>
+  <block id="848e3253f14d48218f737b78699ed4b0" category="paragraph">ユーザーが変更できないキー値を保持しつつ、保存されているリソースを提供されたJSONリクエストボディで置き換えることで、AppMirrorリソースを変更します。アプリケーションのワークフローの必要に応じて、このエンドポイントを使用してAppMirrorの状態を更新してください。</block>
+  <block id="853a3180fbc717117de8e96a739f576a" category="paragraph">アプリのAppMirrorリソースを変更し、キー値を保持しながらリソースの残りの部分を新しいデータで置き換えます。これは、特定の基盤となるプロパティを変更せずにAppMirror構成を更新する必要がある場合に便利です。</block>
+  <block id="3fc3f70ccce31ca13809b019eacc189c" category="paragraph">実行フックのオーバーライドリソースを、保存されているリソース全体を指定されたJSONリクエストボディに置き換えることで変更します。この操作を使用して、指定されたアプリケーションに適用される実行フックを更新します。</block>
+  <block id="240694ef4f20ab3c895614dbb48c4e8b" category="paragraph">アプリの実行フックを変更します。これにより、更新されたフックを使用する今後のアプリケーションアクションに影響します。</block>
+  <block id="c985ce62289959ac9372129c2c7d0cf9" category="paragraph">保存されているリソースを、指定された JSON リクエストボディに置き換えることでスケジュールを変更します。ただし、ユーザーが変更できないキー値は保持されます。</block>
+  <block id="75e5ef1f644dc91e068295c5ab7a547c" category="paragraph">保存されているリソース全体を、指定されたJSONリクエストボディに置き換えることで、アプリを変更します。</block>
+  <block id="78d50b30d9794c8b6636a53a201658d8" category="paragraph">指定された JSON リクエストボディを使用して、バケットに保存されているリソースを更新することでバケットを変更します。その際、重要なキー値は保持されます。これを使用することで、システムの整合性を維持しながら、バケットの設定が希望する設定を反映していることを確認できます。</block>
+  <block id="fa7004fdea5ec4c0fcdf48ecab772b6d" category="paragraph">変更不可能なキー値を維持したまま、既存の設定を提供されたJSONリクエストボディに置き換えることで、クラウド リソースを変更します。これを使用して、ストレージアレイとクラスタの再検出を開始します。</block>
+  <block id="b5d52d49fcfd0312e4c52ecfdd751d44" category="paragraph">保存されているリソースを指定されたJSONリクエストボディに置き換えることで、クラウドクラスタを変更します。これを使用すると、変更不可能なキー値を維持しながらクラスタ構成を更新できます。</block>
+  <block id="403e884a7992f12ee22897eefc5d9ba5" category="paragraph">指定された JSON リクエストボディで保存されているリソース全体を置き換えることにより、クラスタを変更します。クラスタが管理状態にある場合、credentialID の更新は最終的にクラスタの収集を再度試行するトリガーとなります。</block>
+  <block id="f9046adae6cdc7592651ac9806243781" category="paragraph">指定された JSON リクエストボディで保存されているリソース全体を置き換えることにより、管理対象クラスタを変更します。この操作では、ユーザーが変更できないキー値が保持されるため、クラスタの他の側面を更新しながらも、重要な構成はそのまま維持されます。</block>
+  <block id="628b068633446831149cd0b18e754cdc" category="paragraph">指定されたJSONリクエストボディで保存されているリソース全体を置き換えることにより、ストレージバックエンドを変更します。この操作により、ストレージバックエンドの初期インストールを含む、ストレージバックエンドの種類に応じた構成変更が発生する可能性があります。</block>
+  <block id="e6bd9c4b893337f402dfb4865c1ed4f9" category="paragraph">管理対象クラスタ用のアプリケーションを変更し、保存されているリソース全体を指定されたJSONリクエストボディに置き換えます。ユーザーが変更できない重要な値を保持したまま、アプリの設定を更新するには、これを使用します。</block>
+  <block id="1d38b483dd82dc8580649c8108f8aca3" category="paragraph">アカウント内のユーザーまたはグループに権限を付与するロールバインディングを管理します。ロールバインディングとは、ユーザーまたはグループをロールにリンクさせるものです。</block>
+  <block id="7c254f27941388a2fad349812a69faa4" category="paragraph">アプリケーションにおけるデータ保護操作のスケジュールを定義します。</block>
+  <block id="7c8bfb9dddaac0cfc0aa2a20c4d8afc1" category="paragraph">Astra Controlアカウントの機能を構成するキー/値のペアである、アカウント設定を管理します。</block>
+  <block id="21e5bc54edcd4bb300a6abf35e9a04c5" category="paragraph">管理対象のクラスターやアプリケーションが利用できるストレージサービスを提供するプロバイダーであるストレージバックエンドを管理します。</block>
+  <block id="5fd966c29a06b25ca92a034f606515a1" category="paragraph">クラスターで使用可能なストレージクラスを表示します。</block>
+  <block id="61d4ccbc4dfb7206bde389d6a96f191e" category="paragraph">お客様のAstra Controlアカウントの有効なサブスクリプションを表示します。</block>
+  <block id="66a50cbb6f34903cc6d1a7c06240d83c" category="paragraph">Astra Controlが追跡する長時間実行されるタスクを表示し、その進捗状況を監視できるようにします。</block>
+  <block id="7be5914c775d64c9281f6f407f20a5df" category="paragraph">Astra Controlでの認証に使用するAPIアクセストークンを作成および管理します。</block>
+  <block id="f33a98e0bcf87f81c38af0d73d9f4dfd" category="paragraph">ユーザーがまだ読んでいない通知を見つけて、既読としてマークします。</block>
+  <block id="578c85a7741a81701b35e4b279b2576d" category="paragraph">アップグレード対象となるソフトウェアコンポーネントを特定し、アップグレードを開始します。ご登録いただくパッケージによって、利用可能なアップグレードが決まります。</block>
+  <block id="9f2bbb24a1a79ead62b62a22338574d7" category="paragraph">Astra Controlを操作できるユーザーを管理します。</block>
+  <block id="02e6a14a8cc55422260f470622c455df" category="paragraph">アプリケーションに関連付けられているKubernetesボリュームを表示して、アプリケーションがどのようにストレージを使用しているかを確認してください。</block>
 </blocks>

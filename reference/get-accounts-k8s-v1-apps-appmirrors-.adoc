@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-k8s-v1-apps-appmirrors-.html 
+keywords: account resource,app resource,appMirror collection,appMirror resource,k8s apps 
 summary: アプリのAppMirrorリソースを取得する 
 ---
 = アプリのAppMirrorリソースを取得する
@@ -10,7 +11,20 @@ summary: アプリのAppMirrorリソースを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのAppMirrorリソースを取得し、アプリケーションのミラーリング用に保存された構成の詳細へのアクセスを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appMirrors/{appMirror_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンスボディに保存されている AppMirror API リソースを返します。
 

@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/feature_endpoints.html 
+keywords: feature flags,enabled features,disabled features,feature status,feature check 
 summary: Astra API（ACC）機能エンドポイント 
 ---
 = Astra API（ACC）機能エンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+機能フラグを読み取って、どのAstra Control機能が有効または無効になっているかを確認します。
 
 Feature API は、システム内でどの機能が有効または無効になっているかを判断するために、機能フラグリソースへの読み取り専用アクセスを提供します。

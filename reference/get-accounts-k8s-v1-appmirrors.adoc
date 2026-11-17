@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-k8s-v1-appmirrors.html 
+keywords: accounts collection,k8s app mirrors,resource fields,matching resources,collection limit 
 summary: すべてのAppMirrorリソースを表示 
 ---
 = すべてのAppMirrorリソースを表示
@@ -10,7 +11,20 @@ summary: すべてのAppMirrorリソースを表示
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションで使用可能なリソース構成を提供する、AppMirrorリソースのリストを取得します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/appMirrors`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

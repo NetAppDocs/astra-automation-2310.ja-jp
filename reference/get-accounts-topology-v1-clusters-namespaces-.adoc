@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-clusters-namespaces-.html 
+keywords: cluster namespace,namespace resource,stored namespace,cluster resource,namespace collection 
 summary: クラスタの名前空間を取得します 
 ---
 = クラスタの名前空間を取得します
@@ -10,7 +11,20 @@ summary: クラスタの名前空間を取得します
 :imagesdir: ../media/
 
 
+[role="lead"]
+クラスターのネームスペースを取得し、保存されているネームスペースAPIリソースの詳細を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clusters/{cluster_id}/namespaces/{namespace_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されている名前空間APIリソースを返します。
 

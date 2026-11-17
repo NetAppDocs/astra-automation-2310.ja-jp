@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-clouds-clusters-namespaces-.html 
+keywords: namespace resource,stored namespace,namespace collection,cloud resource,cluster resource 
 summary: クラウドの名前空間を取得する 
 ---
 = クラウドの名前空間を取得する
@@ -10,7 +11,20 @@ summary: クラウドの名前空間を取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+クラウドのネームスペースを取得し、クラウド運用向けに保存されたネームスペースAPIリソースを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clouds/{cloud_id}/clusters/{cluster_id}/namespaces/{namespace_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されている名前空間APIリソースを返します。
 

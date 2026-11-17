@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-clusters-storageclasses.html 
+keywords: storage classes,cluster topology,resource collection,cluster storage,account clusters 
 summary: クラスタのストレージクラスを一覧表示します 
 ---
 = クラスタのストレージクラスを一覧表示します
@@ -10,7 +11,20 @@ summary: クラスタのストレージクラスを一覧表示します
 :imagesdir: ../media/
 
 
+[role="lead"]
+クラスターのストレージクラスを取得します。これを使用すると、指定されたクラスター内で利用可能なストレージ構成に関する詳細情報にアクセスできます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clusters/{cluster_id}/storageClasses`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

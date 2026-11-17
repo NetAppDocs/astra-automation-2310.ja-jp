@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/license_endpoints.html 
+keywords: licenses,license management,account licenses,load licenses,licensing 
 summary: Astra API（ACC）ライセンスエンドポイント 
 ---
 = Astra API（ACC）ライセンスエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+Astra Controlアカウントにロードされたライセンスを管理します。
 
 ライセンスAPIは、アカウントにロードされたライセンスを表します。

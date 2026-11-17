@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-volumes-.html 
+keywords: volume resource,volume collection,stored volume,account id,topology volumes 
 summary: ボリュームを取得する 
 ---
 = ボリュームを取得する
@@ -10,7 +11,20 @@ summary: ボリュームを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ボリュームを取得し、指定されたボリュームリソースの保存された構成詳細を提供します。これを使用して、ストレージ環境内のボリュームの現在の状態を確認してください。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/volumes/{volume_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたVolume APIリソースを返します。
 

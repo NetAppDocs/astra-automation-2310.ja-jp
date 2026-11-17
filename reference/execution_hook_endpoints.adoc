@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/execution_hook_endpoints.html 
+keywords: execution hooks,hook configuration,hook sources,application hooks,hook management 
 summary: Astra API（ACC）実行フックエンドポイント 
 ---
 = Astra API（ACC）実行フックエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+アプリケーションの実行フックを作成および管理します。各フックには追加の設定情報が含まれており、フックソースを参照します。
 
 実行フックAPIを使用すると、実行フックを簡単に管理できます。実行フックには、追加の設定情報とフックソースリソースへの参照が含まれています。

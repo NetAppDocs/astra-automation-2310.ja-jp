@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/cluster_endpoints.html 
+keywords: unmanaged clusters,kubernetes clusters,cluster discovery,cluster management,cluster resources 
 summary: Astra API（ACC）クラスタエンドポイント 
 ---
 = Astra API（ACC）クラスタエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+Astra Controlがまだ管理していないKubernetesクラスタを操作します。
 
 Cluster APIは、管理されていないKubernetesクラスタを表します。

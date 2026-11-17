@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-core-v1-users-unreadnotifications-.html 
+keywords: remove unread notification,unread notification delete,delete unread notification,user notification remove,account notification delete 
 summary: 未読通知を削除する 
 ---
 = 未読通知を削除する
@@ -10,7 +11,20 @@ summary: 未読通知を削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+未読の通知を削除し、指定した通知リソースを通知リストから削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/unreadNotifications/{unreadNotification_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定された未読通知APIリソースを削除します。
 

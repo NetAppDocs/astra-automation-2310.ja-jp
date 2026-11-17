@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-upgrades.html 
+keywords: account upgrades,collection resources,matching resources,resource fields,field order 
 summary: すべてのアップグレードを一覧表示 
 ---
 = すべてのアップグレードを一覧表示
@@ -10,7 +11,20 @@ summary: すべてのアップグレードを一覧表示
 :imagesdir: ../media/
 
 
+[role="lead"]
+アップグレードの一覧を取得し、コレクション内の一致するすべてのリソースの詳細を提供します。これを使用すると、指定された順序で各リソースの特定のフィールドにアクセスできます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/upgrades`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

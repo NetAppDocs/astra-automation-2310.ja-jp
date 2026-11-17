@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-topology-v1-managedclusters.html 
+keywords: managed clusters,create managed cluster,cluster topology,account cluster,cluster resource 
 summary: 新しいマネージドクラスタを作成します 
 ---
 = 新しいマネージドクラスタを作成します
@@ -10,7 +11,20 @@ summary: 新しいマネージドクラスタを作成します
 :imagesdir: ../media/
 
 
+[role="lead"]
+マネージド クラスター API リソースの希望値を指定して、マネージド クラスターを作成します。これを使用して、特定の要件に合わせてクラスターを構成およびデプロイします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/managedClusters`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成される Managed Cluster API リソースの希望値を指定します。
 

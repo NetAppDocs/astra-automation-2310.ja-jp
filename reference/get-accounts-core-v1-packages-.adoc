@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-packages-.html 
+keywords: stored package,package resource,package collection,account resource,account id 
 summary: パッケージを取得する 
 ---
 = パッケージを取得する
@@ -10,7 +11,20 @@ summary: パッケージを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+保存されているパッケージを取得し、そのパッケージのAPIリソースの詳細へのアクセスを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/packages/{package_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたパッケージAPIリソースを返します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-k8s-v1-apps-appmirrors.html 
+keywords: appmirror,app mirrors,k8s apps,app resource,account resource 
 summary: アプリ用の新しいAppMirrorリソースを作成します 
 ---
 = アプリ用の新しいAppMirrorリソースを作成します
@@ -10,7 +11,20 @@ summary: アプリ用の新しいAppMirrorリソースを作成します
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのAppMirrorリソースを作成し、ミラーリングに必要な構成値を指定します。これを使用して、アプリケーションのニーズに合わせたミラーリング設定を確立します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appMirrors`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成される AppMirror API リソースの希望する値を示します。
 

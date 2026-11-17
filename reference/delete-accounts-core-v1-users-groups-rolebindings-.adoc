@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/delete-accounts-core-v1-users-groups-rolebindings-.html 
+keywords: role binding removal,user deletion,group role bindings,account management,local auth provider,cloud central provider 
 summary: ユーザに関連付けられているグループのロールバインディングを削除します 
 ---
 = ユーザに関連付けられているグループのロールバインディングを削除します
@@ -10,7 +11,20 @@ summary: ユーザに関連付けられているグループのロールバイ�
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザーに関連付けられているグループのロールバインディングを削除します。これを使用して、システム内のアクセスと権限を効果的に管理します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/groups/{group_id}/roleBindings/{roleBinding_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたロールバインディングAPIリソースを削除します。
 

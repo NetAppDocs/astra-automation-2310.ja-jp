@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-ldapusers.html 
+keywords: ldap users,account id,core v1,list ldap users,user management,resource limit 
 summary: すべてのLDAPユーザーを一覧表示 
 ---
 = すべてのLDAPユーザーを一覧表示
@@ -10,7 +11,20 @@ summary: すべてのLDAPユーザーを一覧表示
 :imagesdir: ../media/
 
 
+[role="lead"]
+LDAPユーザーのリストを取得し、LDAPディレクトリ内のすべてのユーザーの包括的なビューを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/ldapUsers`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 リクエストURLの結果を含むJSONオブジェクトのJSON配列を返します。
 

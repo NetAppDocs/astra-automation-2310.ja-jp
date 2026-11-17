@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-metrics.html 
+keywords: account metrics,metrics retrieval,account performance,account data,performance metrics 
 summary: アカウントのすべてのメトリックを取得します 
 ---
 = アカウントのすべてのメトリックを取得します
@@ -10,7 +11,20 @@ summary: アカウントのすべてのメトリックを取得します
 :imagesdir: ../media/
 
 
+[role="lead"]
+アカウントに関するすべての指標を取得し、パフォーマンスと利用状況に関する洞察を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/metrics`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 アカウントのすべてのメトリックを返します
 

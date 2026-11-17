@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-core-v1-packages-.html 
+keywords: remove package,package resource,delete package,account id,package id 
 summary: パッケージを削除する 
 ---
 = パッケージを削除する
@@ -10,7 +11,20 @@ summary: パッケージを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+パッケージを削除し、指定されたパッケージ API リソースをシステムから削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/packages/{package_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたパッケージAPIリソースを削除します。
 

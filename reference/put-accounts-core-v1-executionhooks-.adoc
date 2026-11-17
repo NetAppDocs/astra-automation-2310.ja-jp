@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-core-v1-executionhooks-.html 
+keywords: execution hook,resource update,account management,application impact,json request 
 summary: 実行フックを変更する 
 ---
 = 実行フックを変更する
@@ -10,7 +11,20 @@ summary: 実行フックを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+実行フックを変更して、保存されているリソースを新しい設定値で更新します。これを使用することで、実行フックを利用するアプリケーションの今後の動作が更新された設定を反映するようにできます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/executionHooks/{executionHook_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

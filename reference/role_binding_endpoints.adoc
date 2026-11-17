@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/role_binding_endpoints.html 
+keywords: role bindings,roles,permissions,access control,user permissions,group permissions 
 summary: Astra API（ACC）ロールバインディングエンドポイント 
 ---
 = Astra API（ACC）ロールバインディングエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+アカウント内のユーザーまたはグループに権限を付与するロールバインディングを管理します。ロールバインディングとは、ユーザーまたはグループをロールにリンクさせるものです。
 
 ロールバインディングAPIは、ユーザーアカウントのペア、またはグループアカウントのペア間の関係と、それらに付与される権限のセット（ロール）を記述します。

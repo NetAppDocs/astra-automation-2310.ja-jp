@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-core-v1-rolebindings.html 
+keywords: role binding,create role,account role,core role binding,role management 
 summary: 新しいロールバインディングを作成します 
 ---
 = 新しいロールバインディングを作成します
@@ -10,7 +11,20 @@ summary: 新しいロールバインディングを作成します
 :imagesdir: ../media/
 
 
+[role="lead"]
+Role Bindingリソースの目的の値を指定して、Astra APIでロールバインディングを作成します。これを使用して、環境内のユーザーに対する権限とアクセス制御を定義します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/roleBindings`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するロールバインディングAPIリソースの希望値を示します。
 

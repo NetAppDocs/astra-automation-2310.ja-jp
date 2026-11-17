@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-k8s-v1-apps-executionhookoverrides-.html 
+keywords: execution hook,execution override,execution hook override,k8s apps,account resource,app resource 
 summary: 実行フックオーバーライドリソースを取得します 
 ---
 = 実行フックオーバーライドリソースを取得します
@@ -10,7 +11,20 @@ summary: 実行フックオーバーライドリソースを取得します
 :imagesdir: ../media/
 
 
+[role="lead"]
+実行フックオーバーライドリソースを取得し、統合および自動化ワークフロー用に保存されている構成の詳細情報を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/executionHookOverrides/{executionHookOverride_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されている実行フックオーバーライドAPIリソースを返します。
 

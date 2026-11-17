@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-core-v1-users-rolebindings.html 
+keywords: role binding,create role,account role,user role,role management,assign role 
 summary: ユーザーに対して新しいロールバインディングを作成する 
 ---
 = ユーザーに対して新しいロールバインディングを作成する
@@ -10,7 +11,20 @@ summary: ユーザーに対して新しいロールバインディングを作�
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザーに対するロールバインディングを作成し、ロールバインディングAPIリソースに必要な値を指定します。これを使用して、アプリケーション内のユーザーに特定のロールと権限を割り当てることができます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/roleBindings`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するロールバインディングAPIリソースの希望値を示します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-core-v1-users-tokens.html 
+keywords: account token,create token,user token,core token,user identifier,account identifier 
 summary: ユーザー用の新しいトークンを作成する 
 ---
 = ユーザー用の新しいトークンを作成する
@@ -10,7 +11,20 @@ summary: ユーザー用の新しいトークンを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザー用の新しいトークンを作成し、Token APIリソースに必要な値を指定します。Astra APIサービスを安全に認証してアクセスする必要がある場合に、これを使用します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/tokens`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成されるToken APIリソースの希望値を指定します。
 

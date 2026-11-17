@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-asups.html 
+keywords: account resources,collection fields,resource list,account collection,resource limit 
 summary: すべてのASUPリソースを一覧表示します 
 ---
 = すべてのASUPリソースを一覧表示します
@@ -10,7 +11,20 @@ summary: すべてのASUPリソースを一覧表示します
 :imagesdir: ../media/
 
 
+[role="lead"]
+ASUPリソースのリストを取得し、コレクション内の各リソースの詳細情報を提供します。個々のフィールドを指定することで、出力内容をニーズに合わせてカスタマイズできます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/asups`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

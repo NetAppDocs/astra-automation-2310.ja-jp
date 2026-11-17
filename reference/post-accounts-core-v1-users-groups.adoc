@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/post-accounts-core-v1-users-groups.html 
+keywords: create group,user groups,group resource,user account,group creation 
 summary: ユーザー用の新しいグループを作成する 
 ---
 = ユーザー用の新しいグループを作成する
@@ -10,7 +11,20 @@ summary: ユーザー用の新しいグループを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザー用に新しいグループを作成し、グループリソースに必要な値を指定します。このエンドポイントを使用して、ユーザーをグループ分けし、管理とアクセス制御を改善できます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/groups`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するグループ API リソースの希望値を示します。
 

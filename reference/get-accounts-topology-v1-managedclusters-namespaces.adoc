@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-managedclusters-namespaces.html 
+keywords: account topology,managed cluster,namespaces list,resource collection,field filter 
 summary: 管理対象クラスタの名前空間を一覧表示します 
 ---
 = 管理対象クラスタの名前空間を一覧表示します
@@ -10,7 +11,20 @@ summary: 管理対象クラスタの名前空間を一覧表示します
 :imagesdir: ../media/
 
 
+[role="lead"]
+管理対象クラスタのネームスペースを取得します。これを使用して、クラスタに関連付けられているネームスペースを表示し、効果的に管理します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/managedClusters/{managedCluster_id}/namespaces`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

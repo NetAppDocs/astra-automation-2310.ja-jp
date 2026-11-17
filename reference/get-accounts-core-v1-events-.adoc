@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-events-.html 
+keywords: stored event,account resource,event collection,response body,event id 
 summary: イベントを取得する 
 ---
 = イベントを取得する
@@ -10,7 +11,20 @@ summary: イベントを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+イベントを取得し、分析または監視目的で保存されたイベントリソースを返します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/events/{event_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンスボディに格納された Event API リソースを返します。
 

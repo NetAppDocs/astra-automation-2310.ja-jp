@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-k8s-v1-apps-executionhooks.html 
+keywords: execution hooks,k8s apps,collection resources,app resource,account resource 
 summary: アプリの実行フックを一覧表示する 
 ---
 = アプリの実行フックを一覧表示する
@@ -10,7 +11,20 @@ summary: アプリの実行フックを一覧表示する
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリの実行フックを取得し、コレクション内の一致するすべてのリソースの JSON 配列を提供します。必要に応じて、これを使用して、一致する各リソースの特定のフィールドを表示します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/executionHooks`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

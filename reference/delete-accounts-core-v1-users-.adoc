@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-core-v1-users-.html 
+keywords: remove user,delete user,delete account user,remove account user,user role bindings,user notification marks 
 summary: ユーザーを削除する 
 ---
 = ユーザーを削除する
@@ -10,7 +11,20 @@ summary: ユーザーを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+Astra APIからユーザーを削除し、通知マーク、トークン、ロールバインディングなどの関連リソースを削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたユーザー API リソースを削除します。
 

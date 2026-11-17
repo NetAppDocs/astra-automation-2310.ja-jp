@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-core-v1-users-.html 
+keywords: replace resource,user management,account update,user collection,modify user,user replace 
 summary: ユーザーを変更する 
 ---
 = ユーザーを変更する
@@ -10,7 +11,20 @@ summary: ユーザーを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザーが変更できないキー値を保持したまま、保存されているリソース全体を指定されたJSONリクエストボディに置き換えることで、ユーザーを変更します。このエンドポイントを使用すると、変更不可能な属性に影響を与えることなく、ユーザーの詳細情報を効率的に更新できます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

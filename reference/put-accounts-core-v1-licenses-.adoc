@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-core-v1-licenses-.html 
+keywords: replace license,license entitlements,account licenses,license collection,entitlement recalculation 
 summary: ライセンスを変更する 
 ---
 = ライセンスを変更する
@@ -10,7 +11,20 @@ summary: ライセンスを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+保存されているデータを指定された情報に置き換え、特定のキー値を保持することで、ライセンスリソースを変更します。このエンドポイントを使用すると、ライセンス権限を効率的に更新できます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/licenses/{license_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

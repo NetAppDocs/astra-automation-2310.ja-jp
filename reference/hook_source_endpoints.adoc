@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/hook_source_endpoints.html 
+keywords: hook sources,shared hook source,execution hooks,hook management,reusable hooks 
 summary: Astra API（ACC）フックソースエンドポイント 
 ---
 = Astra API（ACC）フックソースエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+複数のフックが1つのソースを共有できるように、フックソースと実行フックを別々に管理します。共有ソースを更新すると、そのソースが使用されているすべての場所にその変更が適用されます。
 
 フックソースAPIを使用すると、実行フックリソースの管理とは別に、フックソースを簡単に管理できます。たとえば、複数の実行フックから単一のフックソースを参照することで、重複するフックソースを回避し、複数の実行フックリソースで使用されている場合でも、単一のAPI呼び出しで1つのフックソースを更新できます。

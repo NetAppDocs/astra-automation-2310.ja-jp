@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-topology-v1-clusters-.html 
+keywords: remove cluster,cluster deletion,delete cluster resource,account cluster management,cluster cleanup 
 summary: クラスタを削除 
 ---
 = クラスタを削除
@@ -10,7 +11,20 @@ summary: クラスタを削除
 :imagesdir: ../media/
 
 
+[role="lead"]
+指定されたクラスターを削除し、関連付けられているAPIリソースを削除し、内部データ構造をクリーンアップします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clusters/{cluster_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたクラスタAPIリソースを削除します。
 

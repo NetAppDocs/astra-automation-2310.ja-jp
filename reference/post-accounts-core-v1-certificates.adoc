@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-core-v1-certificates.html 
+keywords: certificate creation,account certificate,certificate resource,create certificate,account id 
 summary: 新しい証明書を作成する 
 ---
 = 新しい証明書を作成する
@@ -10,7 +11,20 @@ summary: 新しい証明書を作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+証明書APIリソース用の新しい証明書を作成します。これを使用して、安全な通信に必要な値を指定します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/certificates`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成する証明書APIリソースの必要な値を示します。
 

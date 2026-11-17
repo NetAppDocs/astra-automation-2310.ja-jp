@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-k8s-v1-apps-appassets-.html 
+keywords: application asset,stored asset,app resource,account resource,asset collection 
 summary: アプリのアプリケーションアセットを取得する 
 ---
 = アプリのアプリケーションアセットを取得する
@@ -10,7 +11,20 @@ summary: アプリのアプリケーションアセットを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのアセットを取得し、保存されているアセットの詳細を後続の処理や分析のために提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appAssets/{appAsset_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンス ボディに格納されている Application Asset API リソースを返します。
 

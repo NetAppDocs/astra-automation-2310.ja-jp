@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-k8s-v1-apps-executionhooks.html 
+keywords: execution hooks,k8s apps,create execution hook,account resource,app resource 
 summary: アプリの新しい実行フックを作成する 
 ---
 = アプリの新しい実行フックを作成する
@@ -10,7 +11,20 @@ summary: アプリの新しい実行フックを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリに新しい実行フックを作成し、自動化されたプロセスや統合に必要な値を指定します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/executionHooks`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成する実行フックAPIリソースの希望値を示します。
 

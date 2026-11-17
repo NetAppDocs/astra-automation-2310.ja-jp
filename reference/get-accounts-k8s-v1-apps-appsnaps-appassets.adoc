@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/get-accounts-k8s-v1-apps-appsnaps-appassets.html 
+keywords: account resources,app resources,k8s apps,app snapshots,app assets 
 summary: アプリケーションスナップショットのアプリケーションアセットを一覧表示します 
 ---
 = アプリケーションスナップショットのアプリケーションアセットを一覧表示します
@@ -10,7 +11,20 @@ summary: アプリケーションスナップショットのアプリケーシ�
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのスナップショットに対応するアプリケーション資産を取得し、スナップショットに関連付けられたリソースの詳細なビューを提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appSnaps/{appSnap_id}/appAssets`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

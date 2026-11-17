@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-topology-v1-buckets.html 
+keywords: bucket creation,topology buckets,account resource,bucket values,ontap endpoint 
 summary: 新しいバケットを作成する 
 ---
 = 新しいバケットを作成する
@@ -10,7 +11,20 @@ summary: 新しいバケットを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+Astra APIで新しいバケットを作成し、確立するBucket APIリソースに必要な値を指定します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/buckets`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成する Bucket API リソースの希望値を示します。
 

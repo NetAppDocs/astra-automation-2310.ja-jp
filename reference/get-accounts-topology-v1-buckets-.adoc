@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-buckets-.html 
+keywords: bucket resource,stored bucket,account bucket,topology bucket,bucket collection 
 summary: バケットを取得する 
 ---
 = バケットを取得する
@@ -10,7 +11,20 @@ summary: バケットを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+バケットを取得し、保存されているバケット構成の詳細をレスポンスで提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/buckets/{bucket_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンス ボディに格納された Bucket API リソースを返します。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-managedclusters-.html 
+keywords: managed cluster,cluster resource,account resource,cluster topology,cluster collection 
 summary: 管理対象クラスターを取得する 
 ---
 = 管理対象クラスターを取得する
@@ -10,7 +11,20 @@ summary: 管理対象クラスターを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+マネージド クラスターを取得し、マネージド クラスター API リソースに格納されている詳細情報を提供します。この情報を使用して、クラスターの現在の構成と状態を把握してください。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/managedClusters/{managedCluster_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されているマネージドクラスタAPIリソースを返します。
 

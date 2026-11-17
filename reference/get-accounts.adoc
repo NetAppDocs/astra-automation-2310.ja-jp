@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts.html 
+keywords: accounts collection,resource listing,json array,resource fields,resource order 
 summary: すべてのアカウントを一覧表示 
 ---
 = すべてのアカウントを一覧表示
@@ -10,7 +11,20 @@ summary: すべてのアカウントを一覧表示
 :imagesdir: ../media/
 
 
+[role="lead"]
+Astra APIのすべてのアカウントを取得し、コレクション内の該当するリソースのJSON配列を返します。これを使用して、指定したフィールドに基づいてアカウントの詳細を表示します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

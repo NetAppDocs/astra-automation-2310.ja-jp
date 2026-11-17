@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/bucket_endpoints.html 
+keywords: backup buckets,object storage buckets,application backups,bucket management,backup storage 
 summary: Astra API（ACC）バケットエンドポイント 
 ---
 = Astra API（ACC）バケットエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+Astra Controlがアプリケーションのバックアップを保存するために使用するバケットを管理します。
 
 Bucket API は、Astra でアプリケーションのバックアップを保存するために使用されるバケットへのアクセスを提供します。

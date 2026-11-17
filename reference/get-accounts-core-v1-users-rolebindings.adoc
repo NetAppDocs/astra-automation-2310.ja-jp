@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-users-rolebindings.html 
+keywords: role bindings,account id,user id,collection fields,resource filtering,sort order 
 summary: ユーザーのロールバインディングを一覧表示する 
 ---
 = ユーザーのロールバインディングを一覧表示する
@@ -10,7 +11,20 @@ summary: ユーザーのロールバインディングを一覧表示する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザーのロールバインディングを取得し、ユーザー権限を効果的に管理するために必要な情報を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/roleBindings`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

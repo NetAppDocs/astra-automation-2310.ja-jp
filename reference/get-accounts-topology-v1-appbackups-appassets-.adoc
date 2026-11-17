@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/get-accounts-topology-v1-appbackups-appassets-.html 
+keywords: application asset,app asset,app backup,account resource,app asset collection 
 summary: アプリケーションバックアップからアプリケーションアセットを取得する 
 ---
 = アプリケーションバックアップからアプリケーションアセットを取得する
@@ -10,7 +11,20 @@ summary: アプリケーションバックアップからアプリケーショ�
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのバックアップからアプリケーション資産を取得します。これを使用して、復元または分析目的で保存されている資産構成にアクセスします。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/appBackups/{appBackup_id}/appAssets/{appAsset_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSON レスポンス ボディに格納されている Application Asset API リソースを返します。
 

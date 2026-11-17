@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-clusters-.html 
+keywords: cluster resource,stored cluster,response body,cluster collection,account resource 
 summary: クラスタを取得する 
 ---
 = クラスタを取得する
@@ -10,7 +11,20 @@ summary: クラスタを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+保存されているクラスタリソースを取得し、管理および運用タスクに必要なクラスタの詳細情報を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clusters/{cluster_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたCluster APIリソースを返します。
 

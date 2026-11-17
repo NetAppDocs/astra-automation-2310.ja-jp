@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-k8s-v1-apps-volumes-.html 
+keywords: volume resource,volume collection,stored volume,app resource,k8s volumes 
 summary: アプリのボリュームを取得する 
 ---
 = アプリのボリュームを取得する
@@ -10,7 +11,20 @@ summary: アプリのボリュームを取得する
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションのボリュームを取得し、保存されているボリュームリソースに関する詳細情報を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/volumes/{volume_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されたVolume APIリソースを返します。
 

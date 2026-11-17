@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-core-v1-users.html 
+keywords: user creation,user resource,account user,create user,account management 
 summary: 新しいユーザーを作成する 
 ---
 = 新しいユーザーを作成する
@@ -10,7 +11,20 @@ summary: 新しいユーザーを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザーAPIリソースの目的の値を指定して、Astra APIに新しいユーザーを作成します。これを使用して、Astra環境内のユーザーアクセスと権限を管理します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するユーザー API リソースの希望値を指定します。
 

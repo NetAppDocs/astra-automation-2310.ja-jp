@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/get-accounts-topology-v1-appbackups-appassets.html 
+keywords: topology resources,account resources,app assets,app backup,id fields,collection limit 
 summary: アプリケーションバックアップのアプリケーションアセットを一覧表示します 
 ---
 = アプリケーションバックアップのアプリケーションアセットを一覧表示します
@@ -10,7 +11,20 @@ summary: アプリケーションバックアップのアプリケーション�
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリケーションバックアップ用のアプリケーションアセットを取得し、コレクション内の一致するすべてのリソースのJSON配列を提供します。これを使用して、各リソースの特定のフィールドを指定された順序で表示します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/appBackups/{appBackup_id}/appAssets`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-core-v1-packages.html 
+keywords: package creation,core packages,account package,create package,package resource 
 summary: 新しいパッケージを作成する 
 ---
 = 新しいパッケージを作成する
@@ -10,7 +11,20 @@ summary: 新しいパッケージを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+Package APIリソースの目的の値を指定して、Astra APIでパッケージを作成します。これを使用して、パッケージの属性と設定を定義します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/packages`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するパッケージ API リソースの希望値を指定します。
 

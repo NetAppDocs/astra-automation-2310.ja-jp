@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/package_endpoints.html 
+keywords: software packages,package registration,installable packages,upgrade packages,package management 
 summary: Astra API（ACC）パッケージエンドポイント 
 ---
 = Astra API（ACC）パッケージエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+Astra Controlに登録されているインストール可能なソフトウェアパッケージを管理します。ご登録いただくパッケージによって、利用可能なアップグレードが決まります。
 
 パッケージAPIは、インストール可能なソフトウェアパッケージを表します。

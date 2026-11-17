@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/entitlement_endpoints.html 
+keywords: entitlements,licensed features,enabled capacities,active subscriptions,account entitlements 
 summary: Astra API（ACC）エンタイトルメントエンドポイント 
 ---
 = Astra API（ACC）エンタイトルメントエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+有効なライセンスとサブスクリプションによって、アカウントで利用できる機能や容量を確認してください。
 
 エンタイトルメントAPIは、アカウントに対して有効なライセンスおよびサブスクリプションによって有効化される機能または容量を表します。

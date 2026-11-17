@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-core-v1-licenses.html 
+keywords: license creation,account license,license resource,create license,license values 
 summary: 新しいライセンスを作成する 
 ---
 = 新しいライセンスを作成する
@@ -10,7 +11,20 @@ summary: 新しいライセンスを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+License APIリソースに必要な値を指定して、新しいライセンスを作成します。このエンドポイントを使用して、環境内のライセンス管理ニーズを効果的に管理してください。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/licenses`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するライセンス API リソースの希望値を示します。
 

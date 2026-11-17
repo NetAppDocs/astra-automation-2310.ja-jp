@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-users.html 
+keywords: users collection,account users,resource fields,collection list,resource sort,collection filter 
 summary: すべてのユーザーを一覧表示する 
 ---
 = すべてのユーザーを一覧表示する
@@ -10,7 +11,20 @@ summary: すべてのユーザーを一覧表示する
 :imagesdir: ../media/
 
 
+[role="lead"]
+システム内のすべてのユーザーのリストを取得し、ユーザー情報と設定へのアクセスを提供します。ユーザーアカウントを効率的に確認または管理するには、これを使用してください。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

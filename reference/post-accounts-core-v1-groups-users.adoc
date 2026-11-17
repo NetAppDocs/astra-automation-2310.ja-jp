@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/post-accounts-core-v1-groups-users.html 
+keywords: create user,account management,group management,user resource,user creation,group access 
 summary: グループの新しいユーザを作成する 
 ---
 = グループの新しいユーザを作成する
@@ -10,7 +11,20 @@ summary: グループの新しいユーザを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループに新しいユーザーを作成します。これを使用して、グループのメンバーシップと権限を効果的に管理します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/users`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するユーザー API リソースの希望値を指定します。
 

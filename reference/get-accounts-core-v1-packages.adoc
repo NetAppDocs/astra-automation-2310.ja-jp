@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-packages.html 
+keywords: account packages,matching resources,collection fields,resource filter,resource sort order 
 summary: すべてのパッケージを一覧表示 
 ---
 = すべてのパッケージを一覧表示
@@ -10,7 +11,20 @@ summary: すべてのパッケージを一覧表示
 :imagesdir: ../media/
 
 
+[role="lead"]
+コレクション内のすべてのパッケージリソースを取得し、一致する各リソースの詳細情報を提供します。これを使用して、返されたデータの中から特定の関心のあるフィールドを表示できます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/packages`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/delete-accounts-core-v1-groups-.html 
+keywords: remove group,group resource,delete group,role binding removal,group deletion 
 summary: グループを削除する 
 ---
 = グループを削除する
@@ -10,7 +11,20 @@ summary: グループを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+指定されたグループリソースを削除します。これを使用して、グループとその関連付けられたロールバインディングをシステムから削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたグループ API リソースを削除します。
 

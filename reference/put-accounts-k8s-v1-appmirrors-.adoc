@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-k8s-v1-appmirrors-.html 
+keywords: resource replacement,k8s app mirror,account resource,app mirror collection,desired state 
 summary: AppMirrorリソースを変更する 
 ---
 = AppMirrorリソースを変更する
@@ -10,7 +11,20 @@ summary: AppMirrorリソースを変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+ユーザーが変更できないキー値を保持しつつ、保存されているリソースを提供されたJSONリクエストボディで置き換えることで、AppMirrorリソースを変更します。アプリケーションのワークフローの必要に応じて、このエンドポイントを使用してAppMirrorの状態を更新してください。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/appMirrors/{appMirror_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えますが、ユーザーが変更できないキー値は保持します。
 

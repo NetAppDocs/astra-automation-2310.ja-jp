@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/storage_class_endpoints.html 
+keywords: storage classes,kubernetes storage,cluster storage classes,storage class details,persistent storage 
 summary: Astra API（ACC）ストレージクラスのエンドポイント 
 ---
 = Astra API（ACC）ストレージクラスのエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+クラスターで使用可能なストレージクラスを表示します。
 
 ストレージクラスAPIは、特定のクラスターで認識されているストレージクラスを記述します。

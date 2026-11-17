@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/put-accounts-core-v1-certificates-.html 
+keywords: replace certificate,trust store update,self signed certificate,certificate trust,certificate management,certificate update 
 summary: 証明書を変更する 
 ---
 = 証明書を変更する
@@ -10,7 +11,20 @@ summary: 証明書を変更する
 :imagesdir: ../media/
 
 
+[role="lead"]
+証明書を変更し、証明書の状態または内容の変更を反映するようにトラストストアを更新します。このエンドポイントを使用して、トラストストアが信頼できる証明書と信頼できない証明書を正確に表現していることを確認してください。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/certificates/{certificate_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 保存されているリソース全体を、指定されたJSONリクエストボディに置き換えます。
 

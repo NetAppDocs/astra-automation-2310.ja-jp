@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: true 
 permalink: reference/delete-accounts-core-v1-groups-users-.html 
+keywords: remove user,delete user,role bindings,user credentials,notification marks,password hash 
 summary: グループのユーザーを削除する 
 ---
 = グループのユーザーを削除する
@@ -10,7 +11,20 @@ summary: グループのユーザーを削除する
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループのユーザーを削除し、指定されたユーザーAPIリソースと、通知マーク、トークン、ロールバインディングなどの関連リソースを削除します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}/users/{user_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 指定されたユーザー API リソースを削除します。
 

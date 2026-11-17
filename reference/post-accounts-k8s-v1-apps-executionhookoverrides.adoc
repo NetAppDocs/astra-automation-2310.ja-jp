@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-k8s-v1-apps-executionhookoverrides.html 
+keywords: execution hook,hook override,app resource,account resource,k8s app 
 summary: アプリ用の新しい実行フックオーバーライドリソースを作成します 
 ---
 = アプリ用の新しい実行フックオーバーライドリソースを作成します
@@ -10,7 +11,20 @@ summary: アプリ用の新しい実行フックオーバーライドリソー�
 :imagesdir: ../media/
 
 
+[role="lead"]
+アプリの実行フックオーバーライドリソースを作成し、カスタマイズに必要な値を指定します。これを使用して、特定のアプリケーション要件に合わせて実行フックをカスタマイズできます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/executionHookOverrides`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成する実行フックオーバーライドAPIリソースの目的の値を示します。
 

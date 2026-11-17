@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-topology-v2-managedclusters-apps.html 
+keywords: managed clusters,app creation,account resource,app resource,cluster management 
 summary: 管理対象クラスター用の新しいアプリを作成する 
 ---
 = 管理対象クラスター用の新しいアプリを作成する
@@ -10,7 +11,20 @@ summary: 管理対象クラスター用の新しいアプリを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+管理対象クラスタ用に新しいアプリを作成し、アプリAPIリソース構成に必要な値を指定します。このエンドポイントを使用して、管理対象クラスタ環境内でアプリケーションを起動します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/topology/v2/managedClusters/{managedCluster_id}/apps`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するアプリ API リソースの希望値を指定します。
 

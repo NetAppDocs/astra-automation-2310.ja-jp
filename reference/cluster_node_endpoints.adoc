@@ -3,11 +3,15 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/cluster_node_endpoints.html 
+keywords: cluster nodes,kubernetes nodes,node details,node information,cluster resources 
 summary: Astra API（ACC）クラスタノードエンドポイント 
 ---
 = Astra API（ACC）クラスタノードエンドポイント
 :allow-uri-read: 
 :imagesdir: ../media/
 
+
+[role="lead"]
+クラスターに属するノードを表示します。
 
 クラスターノードAPIは、クラスターに関連付けられたノードへのアクセスを提供します。

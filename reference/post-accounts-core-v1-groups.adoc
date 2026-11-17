@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/post-accounts-core-v1-groups.html 
+keywords: group creation,core groups,account group,group resource,ontap group 
 summary: 新しいグループを作成する 
 ---
 = 新しいグループを作成する
@@ -10,7 +11,20 @@ summary: 新しいグループを作成する
 :imagesdir: ../media/
 
 
+[role="lead"]
+グループAPIリソースに必要な値を定義し、新しいグループを作成します。これを使用して、環境内のリソースを効果的に整理および管理します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 作成するグループ API リソースの希望値を示します。
 

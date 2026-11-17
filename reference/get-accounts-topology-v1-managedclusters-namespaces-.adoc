@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-managedclusters-namespaces-.html 
+keywords: namespace resource,managed cluster,namespaces list,stored namespace,account id 
 summary: 管理対象クラスタのネームスペースを取得します 
 ---
 = 管理対象クラスタのネームスペースを取得します
@@ -10,7 +11,20 @@ summary: 管理対象クラスタのネームスペースを取得します
 :imagesdir: ../media/
 
 
+[role="lead"]
+管理対象クラスターのネームスペースを取得し、クラスター内のネームスペースリソースの保存された構成の詳細を提供します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/managedClusters/{managedCluster_id}/namespaces/{namespace_id}`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 JSONレスポンスボディに格納されている名前空間APIリソースを返します。
 

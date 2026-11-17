@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-topology-v1-clusters.html 
+keywords: clusters,topology,account id,resource collection,field filter,field limit 
 summary: すべてのクラスタを一覧表示します 
 ---
 = すべてのクラスタを一覧表示します
@@ -10,7 +11,20 @@ summary: すべてのクラスタを一覧表示します
 :imagesdir: ../media/
 
 
+[role="lead"]
+クラスターのリストを取得し、コレクション内の各クラスターに関する詳細情報を提供します。これを使用して、クラスターの現在の構成と状態を評価します。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/clusters`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 

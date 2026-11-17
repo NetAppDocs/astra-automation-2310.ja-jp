@@ -3,6 +3,7 @@ sidebar: sidebar
 api: true 
 explorer: false 
 permalink: reference/get-accounts-core-v1-executionhooks.html 
+keywords: execution hooks,account resources,matching resources,collection fields,resource filter 
 summary: すべての実行フックを一覧表示します 
 ---
 = すべての実行フックを一覧表示します
@@ -10,7 +11,20 @@ summary: すべての実行フックを一覧表示します
 :imagesdir: ../media/
 
 
+[role="lead"]
+指定された条件に一致するすべての実行フックを取得し、リソースの JSON 配列を提供します。これを使用すると、コレクション内の各フックに関する詳細情報を表示できます。
+
+
+
+[[http-method-and-endpoint]]
+== HTTPメソッドとエンドポイント
+
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/executionHooks`#
+
+
+
+[[usage-notes]]
+== 使用上の注意
 
 コレクション内の一致するすべてのリソースのJSON配列を返します。リクエストで個別のフィールドが指定されている場合、アイテムのJSON配列には、一致する各リソースに対して要求されたフィールドが、指定された順序で含まれます。
 
